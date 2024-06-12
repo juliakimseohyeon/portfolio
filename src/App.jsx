@@ -1,7 +1,8 @@
 import "./App.css";
+import Project from "./pages/Project/Project";
 
 function App() {
-  return;
+  return <Project />;
 }
 
 export default App;
