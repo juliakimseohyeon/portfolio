@@ -33,34 +33,34 @@ export default function Project() {
       <section className="skills">
         <h2>Skills</h2>
         <div className="skills__icon-group">
-          <img src={logoCss} />
-          <img src={logoExpress} />
-          <img src={logoFigma} />
-          <img src={logoHtml} />
-          <img src={logoIllustrator} />
-          <img src={logoJavascript} />
-          <img src={logoLinkedin} />
-          <img src={logoMysql} />
-          <img src={logoNode} />
-          <img src={logoOpenai} />
-          <img src={logoPostman} />
-          <img src={logoReact} />
-          <img src={logoSass} />
-          <img src={logoXd} />
+          <img className="skills__icon" src={logoCss} />
+          <img className="skills__icon" src={logoExpress} />
+          <img className="skills__icon" src={logoFigma} />
+          <img className="skills__icon" src={logoHtml} />
+          <img className="skills__icon" src={logoIllustrator} />
+          <img className="skills__icon" src={logoJavascript} />
+          <img className="skills__icon" src={logoLinkedin} />
+          <img className="skills__icon" src={logoMysql} />
+          <img className="skills__icon" src={logoNode} />
+          <img className="skills__icon" src={logoOpenai} />
+          <img className="skills__icon" src={logoPostman} />
+          <img className="skills__icon" src={logoReact} />
+          <img className="skills__icon" src={logoSass} />
+          <img className="skills__icon" src={logoXd} />
         </div>
       </section>
       <section className="projects">
         <h2>Projects</h2>
         <div className="projects__gallery">
           <div className="projects__item">
-            <img src={kongThumbnail} />
+            <img className="projects__item-thumbnail" src={kongThumbnail} />
             <h3>Kong</h3>
             <p>
               Get ready to fall in love with nature! Kong is a gamified plant
               identification app powered by OpenAI and StabilityAI which aims to
               foster a love for nature in a fun and artful way.
             </p>
-            <div className="project__item-tags">
+            <div className="projects__item-tags">
               <p>Full Stack</p>
               <p>Full Stack</p>
               <p>Full Stack</p>

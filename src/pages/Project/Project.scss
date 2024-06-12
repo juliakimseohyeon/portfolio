@@ -1,0 +1,32 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.hero {
+  width: 100%;
+}
+
+.skills {
+  width: 100%;
+  &__icon-group {
+    width: 100%;
+    @include display-flex(flex, row);
+  }
+  &__icon {
+    width: 4rem;
+  }
+}
+
+.projects {
+  width: 100%;
+  &__gallery,
+  &__item {
+    @include display-flex(flex, column);
+  }
+  &__item-thumbnail {
+    width: 100%;
+  }
+  &__item-tags {
+    @include display-flex(flex, row);
+    gap: 1rem;
+  }
+}

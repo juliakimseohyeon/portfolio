@@ -34,6 +34,10 @@ button {
   transition: border-color 0.25s;
 }
 
+.container {
+  @include display-flex(flex, column);
+}
+
 .theme-light {
   color: $color-primary-blue;
   background: rgb(88, 193, 218);
