@@ -34,6 +34,10 @@ button {
   transition: border-color 0.25s;
 }
 
+.label {
+  font-size: 0.7rem;
+}
+
 .container {
   @include display-flex(flex, column);
 }

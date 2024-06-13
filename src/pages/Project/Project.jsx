@@ -33,9 +33,9 @@ export default function Project() {
               foster a love for nature in a fun and artful way.
             </p>
             <div className="projects__item-tags">
-              <p>Full Stack</p>
-              <p>Full Stack</p>
-              <p>Full Stack</p>
+              <p className="label">Full Stack</p>
+              <p className="label">Full Stack</p>
+              <p className="label">Full Stack</p>
             </div>
           </div>
         </div>
