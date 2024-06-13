@@ -3,6 +3,7 @@ import heroImg from "../../assets/images/const-julia-dark.png";
 import arrowDown from "../../assets/icons/icon-arrow-down.svg";
 import kongThumbnail from "../../assets/images/kong-thumbnail-dark.png";
 import Carousel from "../../components/Carousel/Carousel";
+import Typewriter from "typewriter-effect";
 
 export default function Project() {
   return (
@@ -25,7 +26,19 @@ export default function Project() {
             </p>
             <p className="hero__indented-text">hardWorker: true,</p>
             <p className="hero__indented-text">isCreative: true,</p>
-            <p className="hero__indented-text">likes: [ '🐱', '☕️', '✈️']</p>
+            <Typewriter
+              className="hero__indented-text hero__typewriter-text"
+              options={{ loop: true, autoStart: true }}
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString("likes: [ '🐱', '☕️', '🌱']")
+                  .pauseFor(1000)
+                  .deleteAll()
+                  .typeString("hobbies: [ '🥾', '✈️', '✈️']")
+                  .pauseFor(1000)
+                  .start();
+              }}
+            />
             <p className="hero__text">{`}`}</p>
           </div>
         </div>
