@@ -14,7 +14,6 @@
     cursor: pointer;
   }
   &__label:before {
-    background-image: url("../../assets/icons/icon-moon.svg");
     background-size: cover;
     content: "";
     position: absolute;
@@ -22,7 +21,10 @@
     height: 2rem;
     transition: 0.3s;
   }
-  &__checkbox:checked + &__label:before {
+  &__label--dark:before {
+    background-image: url("../../assets/icons/icon-moon.svg");
+  }
+  &__label--light:before {
     background-image: url("../../assets/icons/icon-sun.svg");
   }
   &__checkbox:checked + &__label {

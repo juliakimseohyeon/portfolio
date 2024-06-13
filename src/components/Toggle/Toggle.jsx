@@ -33,8 +33,14 @@ export default function Toggle() {
         id="toggle"
         className="toggle__checkbox"
         onClick={handleOnClick}
+        checked={toggle === "light"}
       />
-      <label htmlFor="toggle" className="toggle__label">
+      <label
+        htmlFor="toggle"
+        className={`toggle__label ${
+          toggle === "dark" ? "toggle__label--dark" : "toggle__label--light"
+        }`}
+      >
         <span className="toggle__label-background"></span>
       </label>
     </div>
