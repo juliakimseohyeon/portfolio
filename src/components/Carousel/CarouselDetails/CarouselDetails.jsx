@@ -4,7 +4,6 @@ import logoFigma from "../../../assets/logos/logo-figma.svg";
 import logoHtml from "../../../assets/logos/logo-html.svg";
 import logoIllustrator from "../../../assets/logos/logo-illustrator.svg";
 import logoJavascript from "../../../assets/logos/logo-javascript.svg";
-import logoLinkedin from "../../../assets/logos/logo-linkedin.svg";
 import logoMysql from "../../../assets/logos/logo-mysql.svg";
 import logoNode from "../../../assets/logos/logo-node.svg";
 import logoOpenai from "../../../assets/logos/logo-openai-icon.svg";
@@ -14,9 +13,17 @@ import logoSass from "../../../assets/logos/logo-sass.svg";
 import logoXd from "../../../assets/logos/logo-xd.svg";
 
 export const carouselDetails = [
-  logoCss,
-  logoExpress,
-  logoFigma,
   logoHtml,
+  logoCss,
+  logoSass,
+  logoJavascript,
+  logoReact,
+  logoFigma,
+  logoXd,
   logoIllustrator,
+  logoMysql,
+  logoNode,
+  logoExpress,
+  logoOpenai,
+  logoPostman,
 ];
