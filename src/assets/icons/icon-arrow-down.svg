@@ -1,3 +1,15 @@
-<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8.99998 12.172L8.99998 0H6.99998L6.99998 12.172L1.63598 6.808L0.221985 8.222L7.99998 16L15.778 8.222L14.364 6.808L8.99998 12.172Z" fill="#F1F2F3"/>
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+    <style>
+        :root {
+            fill: black
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                fill: white
+            }
+        }
+    </style>
+    <path
+        d="M8.99998 12.172L8.99998 0H6.99998L6.99998 12.172L1.63598 6.808L0.221985 8.222L7.99998 16L15.778 8.222L14.364 6.808L8.99998 12.172Z" />
 </svg>
