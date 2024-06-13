@@ -18,6 +18,10 @@ a {
   text-decoration: inherit;
 }
 
+a:hover {
+  color: $color-primary-teal;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -53,11 +57,7 @@ button {
   );
 
   a {
-    color: $color-primary-teal;
-  }
-
-  a:hover {
-    color: $color-primary-purple;
+    color: $color-primary-blue;
   }
 }
 
@@ -73,10 +73,6 @@ button {
   );
 
   a {
-    color: $color-primary-teal;
-  }
-
-  a:hover {
     color: $color-primary-white;
   }
 }
