@@ -2,8 +2,8 @@ import "./CarouselItem.scss";
 
 export default function CarouselItem({ imgUrl }) {
   return (
-    <div className="carousel-card">
-      <img src={imgUrl} />
+    <div className="carousel__item">
+      <img className="carousel__image" src={imgUrl} />
     </div>
   );
 }

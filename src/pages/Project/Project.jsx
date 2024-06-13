@@ -19,9 +19,7 @@ export default function Project() {
       </section>
       <section className="skills">
         <h2>Skills</h2>
-        <div className="skills__icon-group">
-          <Carousel />
-        </div>
+        <Carousel />
       </section>
       <section className="projects">
         <h2>Projects</h2>

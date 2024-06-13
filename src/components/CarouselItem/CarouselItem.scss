@@ -1,0 +1,17 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.carousel {
+  &__item {
+    @include display-flex(flex, row);
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__image {
+    height: 4rem;
+  }
+}

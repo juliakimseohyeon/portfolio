@@ -4,8 +4,8 @@ import { carouselDetails } from "./CarouselDetails/CarouselDetails";
 
 export default function LogoCarousel() {
   return (
-    <div className="carousel-container">
-      <div className="carousel-track">
+    <div className="carousel__container">
+      <div className="carousel__track">
         {carouselDetails.map((item, index) => {
           return <CarouselItem imgUrl={item} key={index} />;
         })}

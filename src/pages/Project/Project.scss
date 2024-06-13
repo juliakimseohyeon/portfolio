@@ -7,13 +7,6 @@
 
 .skills {
   width: 100%;
-  &__icon-group {
-    width: 100%;
-    @include display-flex(flex, row);
-  }
-  &__icon {
-    width: 4rem;
-  }
 }
 
 .projects {
