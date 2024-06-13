@@ -1,10 +1,10 @@
 import "./Toggle.scss";
 import { useEffect, useState } from "react";
-import { setTheme } from "../utils/themes";
+import { keepTheme, setTheme } from "../utils/themes";
 
 export default function Toggle() {
   const [toggle, setToggle] = useState("dark");
-  let theme = localStorage.getItem("theme");
+  const theme = localStorage.getItem("theme");
 
   const handleOnClick = () => {
     if (theme === "theme-dark") {
@@ -18,12 +18,13 @@ export default function Toggle() {
 
   // Function to ensure the local storage always loads the correct theme
   useEffect(() => {
+    keepTheme();
     if (theme === "theme-dark") {
       setToggle("dark");
     } else {
       setToggle("light");
     }
-  }, [theme]);
+  }, []);
 
   return (
     <div className="toggle__container">

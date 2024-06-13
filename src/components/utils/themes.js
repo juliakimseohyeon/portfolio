@@ -10,12 +10,11 @@ const setTheme = (themeName) => {
 /*                  Function to keep the same theme on reload                 */
 /* -------------------------------------------------------------------------- */
 const keepTheme = () => {
-  if (localStorage.getItem("theme") === "theme-dark") {
-    setTheme("theme-dark");
-    console.log("Keeping Dark Theme");
+  const theme = localStorage.getItem("theme");
+  if (theme === "theme-dark" || !theme) {
+    setTheme("theme-dark"); // If there is no default Theme, default to dark-mode
   } else {
     setTheme("theme-light");
-    console.log("Keeping light theme");
   }
 };
 
