@@ -2,5 +2,22 @@
 @use "../../styles/partials/variables" as *;
 
 nav {
+  @include display-flex(flex, row, space-between);
+}
+
+.menu {
+  background-color: $color-primary-purple;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
   @include display-flex(flex, row);
+}
+.nav {
+  &__logo {
+    font-weight: 700;
+  }
+  &--right {
+    @include display-flex(flex, row);
+    gap: 1rem;
+  }
 }

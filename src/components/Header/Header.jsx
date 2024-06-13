@@ -10,22 +10,26 @@ export default function Header() {
   return (
     <header>
       <nav>
-        <a>Julia.Kim.SeoHyeon</a>
-        <Toggle />
-        <div
-          className="menu"
-          onClick={() => {
-            setHamburgerOpen(true);
-          }}
-        >
-          {!hamburgerOpen && <img src={iconHamburger} alt="Open menu" />}
+        <div className="nav--left">
+          <a className="nav__logo">Julia.Kim.SeoHyeon</a>
         </div>
-        {hamburgerOpen && (
-          <HamburgerMenu
-            hamburgerOpen={hamburgerOpen}
-            setHamburgerOpen={setHamburgerOpen}
-          />
-        )}
+        <div className="nav--right">
+          <Toggle />
+          <div
+            className="menu"
+            onClick={() => {
+              setHamburgerOpen(true);
+            }}
+          >
+            {!hamburgerOpen && <img src={iconHamburger} alt="Open menu" />}
+          </div>
+          {hamburgerOpen && (
+            <HamburgerMenu
+              hamburgerOpen={hamburgerOpen}
+              setHamburgerOpen={setHamburgerOpen}
+            />
+          )}
+        </div>
       </nav>
     </header>
   );
