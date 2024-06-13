@@ -3,6 +3,38 @@
 
 .hero {
   width: 100%;
+
+  &__image {
+    padding: 1rem;
+    @include display-flex(flex, column);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.15rem;
+
+    height: 20rem;
+    border-radius: 1rem;
+    background: rgb(100, 74, 173);
+    background: linear-gradient(
+      135deg,
+      rgba(100, 74, 173, 1) 0%,
+      rgba(88, 193, 218, 1) 100%
+    );
+  }
+  &__text-group {
+    text-align: left;
+  }
+  &__text {
+    margin: 0;
+  }
+  &__text--dark {
+    color: $color-primary-blue;
+  }
+  &__text--yellow {
+    color: $color-secondary-yellow;
+  }
+  &__indented-text {
+    padding-left: 1rem;
+    margin: 0;
+  }
 }
 
 .skills {

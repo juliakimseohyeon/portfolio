@@ -45,11 +45,11 @@ button {
 .theme-light {
   color-scheme: light; // Will be used to trigger color change in SVGs
   color: $color-primary-blue;
-  background: rgb(88, 193, 218);
+  background: $color-primary-teal;
   background: linear-gradient(
     135deg,
-    rgba(88, 193, 218, 1) 0%,
-    rgba(241, 242, 243, 1) 45%
+    rgba($color-primary-teal, 1) 0%,
+    rgba($color-primary-white, 1) 45%
   );
 
   a {
@@ -64,12 +64,12 @@ button {
 .theme-dark {
   color-scheme: dark;
   color: $color-primary-white;
-  background: rgb(2, 0, 36);
+  background: $color-primary-blue;
   background: linear-gradient(
     135deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(88, 193, 218, 1) 100%
+    rgba($color-primary-blue, 1) 0%,
+    rgba($color-primary-purple, 1) 75%,
+    rgba($color-primary-teal, 1) 100%
   );
 
   a {

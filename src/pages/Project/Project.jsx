@@ -14,7 +14,20 @@ export default function Project() {
           <img src={arrowDown} />
         </div>
         <div className="hero__image">
-          <img src={heroImg} />
+          <div className="hero__text-group">
+            <p className="hero__text">
+              <span className="hero__text--dark">const</span> julia{" "}
+              <span className="hero__text--dark">=</span> {`{`}
+            </p>
+            <p className="hero__indented-text">
+              skills: ['HTML', 'CSS', 'Sass', 'React', 'JavaScript', 'Express',
+              'and more'],
+            </p>
+            <p className="hero__indented-text">hardWorker: true,</p>
+            <p className="hero__indented-text">isCreative: true,</p>
+            <p className="hero__indented-text">likes: [ '🐱', '☕️', '✈️']</p>
+            <p className="hero__text">{`}`}</p>
+          </div>
         </div>
       </section>
       <section className="skills">
