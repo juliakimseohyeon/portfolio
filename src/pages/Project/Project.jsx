@@ -1,21 +1,8 @@
 import "./Project.scss";
 import heroImg from "../../assets/images/const-julia-dark.png";
 import arrowDown from "../../assets/icons/icon-arrow-down.svg";
-import logoCss from "../../assets/logos/logo-css.svg";
-import logoExpress from "../../assets/logos/logo-express.svg";
-import logoFigma from "../../assets/logos/logo-figma.svg";
-import logoHtml from "../../assets/logos/logo-html.svg";
-import logoIllustrator from "../../assets/logos/logo-illustrator.svg";
-import logoJavascript from "../../assets/logos/logo-javascript.svg";
-import logoLinkedin from "../../assets/logos/logo-linkedin.svg";
-import logoMysql from "../../assets/logos/logo-mysql.svg";
-import logoNode from "../../assets/logos/logo-node.svg";
-import logoOpenai from "../../assets/logos/logo-openai-icon.svg";
-import logoPostman from "../../assets/logos/logo-postman.svg";
-import logoReact from "../../assets/logos/logo-react.svg";
-import logoSass from "../../assets/logos/logo-sass.svg";
-import logoXd from "../../assets/logos/logo-xd.svg";
 import kongThumbnail from "../../assets/images/kong-thumbnail-dark.png";
+import Carousel from "../../components/Carousel/Carousel";
 
 export default function Project() {
   return (
@@ -33,20 +20,7 @@ export default function Project() {
       <section className="skills">
         <h2>Skills</h2>
         <div className="skills__icon-group">
-          <img className="skills__icon" src={logoCss} />
-          <img className="skills__icon" src={logoExpress} />
-          <img className="skills__icon" src={logoFigma} />
-          <img className="skills__icon" src={logoHtml} />
-          <img className="skills__icon" src={logoIllustrator} />
-          <img className="skills__icon" src={logoJavascript} />
-          <img className="skills__icon" src={logoLinkedin} />
-          <img className="skills__icon" src={logoMysql} />
-          <img className="skills__icon" src={logoNode} />
-          <img className="skills__icon" src={logoOpenai} />
-          <img className="skills__icon" src={logoPostman} />
-          <img className="skills__icon" src={logoReact} />
-          <img className="skills__icon" src={logoSass} />
-          <img className="skills__icon" src={logoXd} />
+          <Carousel />
         </div>
       </section>
       <section className="projects">
