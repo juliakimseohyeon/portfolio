@@ -16,10 +16,7 @@ export default function Project() {
         </div>
         <div className="hero__image">
           <div className="hero__text-group">
-            <p className="hero__text">
-              <span className="hero__text--dark">const</span> julia{" "}
-              <span className="hero__text--dark">=</span> {`{`}
-            </p>
+            <p className="hero__text">const julia = {`{`}</p>
             <p className="hero__indented-text">
               skills: ['HTML', 'CSS', 'Sass', 'React', 'JavaScript', 'Express',
               'and more'],
@@ -27,14 +24,17 @@ export default function Project() {
             <p className="hero__indented-text">hardWorker: true,</p>
             <p className="hero__indented-text">isCreative: true,</p>
             <Typewriter
-              className="hero__indented-text hero__typewriter-text"
               options={{ loop: true, autoStart: true }}
               onInit={(typewriter) => {
                 typewriter
-                  .typeString("likes: [ '🐱', '☕️', '🌱']")
+                  .typeString(
+                    `<span style="padding-left: 1rem">likes: [ '😻', '🍷', '🌿']</span>`
+                  )
                   .pauseFor(1000)
                   .deleteAll()
-                  .typeString("hobbies: [ '🥾', '✈️', '✈️']")
+                  .typeString(
+                    `<span role="img" style="padding-left: 1rem">hobbies: [ '🥾', '🧶', '🚣']</span>`
+                  )
                   .pauseFor(1000)
                   .start();
               }}
