@@ -15,6 +15,16 @@ export default function Toggle() {
       setToggle("dark");
     }
   };
+
+  // Function to ensure the local storage always loads the correct theme
+  useEffect(() => {
+    if (theme === "theme-dark") {
+      setToggle("dark");
+    } else {
+      setToggle("light");
+    }
+  }, [theme]);
+
   return (
     <div className="toggle__container">
       <input

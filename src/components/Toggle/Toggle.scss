@@ -1,2 +1,31 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
+
+.toggle {
+  &__checkbox {
+    display: none;
+  }
+  &__label {
+    @include display-flex(flex, column);
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: $color-primary-white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  &__label:before {
+    background-image: url("../../assets/icons/icon-moon.svg");
+    background-size: cover;
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    transition: 0.3s;
+  }
+  &__checkbox:checked + &__label:before {
+    background-image: url("../../assets/icons/icon-sun.svg");
+  }
+  &__checkbox:checked + &__label {
+    background-color: $color-primary-blue;
+  }
+}
