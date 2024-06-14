@@ -15,6 +15,11 @@ export default function Project() {
           <img src={arrowDown} />
         </div>
         <div className="hero__image">
+          <div className="hero__circle-group">
+            <div className="hero__circle"></div>
+            <div className="hero__circle"></div>
+            <div className="hero__circle"></div>
+          </div>
           <div className="hero__text-group">
             <p className="hero__text">const julia = {`{`}</p>
             <p className="hero__indented-text">
@@ -28,12 +33,12 @@ export default function Project() {
               onInit={(typewriter) => {
                 typewriter
                   .typeString(
-                    `<span style="padding-left: 1rem">likes: [ '😻', '🍷', '🌿']</span>`
+                    `<span style="padding-left: 1rem">likes: ['😻', '🍷', '🌿']</span>`
                   )
                   .pauseFor(1000)
                   .deleteAll()
                   .typeString(
-                    `<span role="img" style="padding-left: 1rem">hobbies: [ '🥾', '🧶', '🚣']</span>`
+                    `<span role="img" style="padding-left: 1rem">hobbies: ['🥾', '🧶', '🚣']</span>`
                   )
                   .pauseFor(1000)
                   .start();
