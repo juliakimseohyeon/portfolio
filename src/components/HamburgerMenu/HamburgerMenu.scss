@@ -22,4 +22,9 @@
   &__item {
     color: $color-primary-white;
   }
+
+  &__contact-group {
+    @include display-flex(flex, row);
+    gap: 1rem;
+  }
 }
