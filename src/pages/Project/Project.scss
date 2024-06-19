@@ -103,6 +103,7 @@ html.theme-light .hero__image {
   width: 100%;
   &__gallery,
   &__item {
+    width: 100%;
     @include display-flex(flex, column, space-between, flex-start);
     text-align: left;
   }
@@ -110,7 +111,12 @@ html.theme-light .hero__image {
     width: 100%;
   }
   &__item-tags {
-    @include display-flex(flex, row);
-    gap: 1rem;
+    @include display-flex(flex, row, flex-start, flex-start);
+    flex-wrap: wrap;
+    gap: 0 1rem;
+  }
+  &__item-label {
+    margin: 0.25rem 0;
+    font-weight: 300;
   }
 }

@@ -93,7 +93,7 @@ export default function Project() {
               <p>{project.intro_text}</p>
               <div className="projects__item-tags">
                 {project.tags.map((tag, idx) => (
-                  <p className="label" key={idx}>
+                  <p className="projects__item-label label" key={idx}>
                     {tag}
                   </p>
                 ))}
