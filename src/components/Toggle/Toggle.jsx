@@ -40,9 +40,7 @@ export default function Toggle() {
         className={`toggle__label ${
           toggle === "dark" ? "toggle__label--dark" : "toggle__label--light"
         }`}
-      >
-        <span className="toggle__label-background"></span>
-      </label>
+      ></label>
     </div>
   );
 }

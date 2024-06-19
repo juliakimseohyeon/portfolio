@@ -12,6 +12,7 @@
     background-color: $color-primary-white;
     border-radius: 0.5rem;
     cursor: pointer;
+    transition: 0.2s;
   }
   &__label:before {
     background-size: cover;
@@ -28,6 +29,14 @@
     background-image: url("../../assets/icons/icon-sun.svg");
   }
   &__checkbox:checked + &__label {
-    background-color: $color-primary-blue;
+    background-color: $color-primary-black;
   }
+}
+
+html.theme-dark .toggle__label:hover {
+  background-color: $color-secondary-red;
+}
+
+html.theme-light .toggle__label:hover {
+  background-color: $color-secondary-yellow;
 }
