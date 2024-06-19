@@ -3,14 +3,14 @@
 
 .hamburger {
   @include display-flex(flex, column);
-  gap: 2rem;
+  gap: 3rem;
   width: 100%;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
-  background-color: $color-primary-purple;
+  background-color: $color-primary-teal;
 
   &__icon {
     cursor: pointer;
@@ -28,7 +28,7 @@
 
   &__contact-group {
     @include display-flex(flex, row);
-    gap: 1rem;
+    gap: 3rem;
   }
 
   &__contact {
@@ -48,4 +48,9 @@
     height: 100%;
     background: none;
   }
+}
+
+// Dark mode menu style
+html.theme-dark .hamburger {
+  background-color: $color-primary-blue;
 }
