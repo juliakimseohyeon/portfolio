@@ -1,5 +1,11 @@
 @use "./styles/partials/mixins" as *;
 @use "./styles/partials/variables" as *;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
 
 body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -13,6 +19,11 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
 a {
   font-weight: 500;
   text-decoration: inherit;
@@ -22,9 +33,16 @@ a:hover {
   color: $color-primary-teal;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+ul {
+  margin: 0;
+  padding-left: 0.75rem;
+  font-weight: 200;
+}
+
+p {
+  margin: 0;
+  line-height: 1.75rem;
+  font-weight: 200;
 }
 
 button {
@@ -43,6 +61,7 @@ button {
 }
 
 .container {
+  width: 100%;
   @include display-flex(flex, column);
   gap: 2rem;
 }

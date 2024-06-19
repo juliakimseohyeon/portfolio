@@ -1,2 +1,41 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
+
+.project-hero {
+  width: 100%;
+  @include display-flex(flex, column, normal, flex-start);
+  gap: 1rem;
+  &__image {
+    width: 100%;
+    border-radius: 2rem;
+    margin-top: 2rem;
+  }
+  &__text {
+    width: 100%;
+    @include display-flex(flex, row, space-between, baseline);
+  }
+  &__title {
+    margin: 0;
+  }
+  &__links {
+    @include display-flex(flex, row, space-between);
+    gap: 2rem;
+  }
+
+  &__tag-group {
+    @include display-flex(flex, row, normal, flex-start);
+    gap: 0 1rem;
+    flex-wrap: wrap;
+  }
+
+  &__tag {
+    margin: 0;
+  }
+}
+
+.project-description-group {
+  width: 100%;
+  text-align: left;
+  @include display-flex(flex, column, normal, flex-start);
+  gap: 2rem;
+}
