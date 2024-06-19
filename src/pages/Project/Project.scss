@@ -12,12 +12,6 @@
     font-size: 1.15rem;
     height: 20rem;
     border-radius: 1rem;
-    background: rgb(100, 74, 173);
-    background: linear-gradient(
-      135deg,
-      rgba(100, 74, 173, 1) 0%,
-      rgba(88, 193, 218, 1) 100%
-    );
   }
 
   &__circle-group {
@@ -60,6 +54,28 @@
     padding-left: 1rem;
     margin: 0;
   }
+}
+
+// Light mode Hero Image style
+html.theme-dark .hero__image {
+  background: rgb(100, 74, 173);
+  background: linear-gradient(
+    135deg,
+    $color-primary-purple 0%,
+    $color-primary-teal 100%
+  );
+  color: $color-primary-black;
+}
+
+// Dark mode Hero Image style
+html.theme-light .hero__image {
+  background: rgb(30, 30, 30);
+  background: linear-gradient(
+    135deg,
+    $color-primary-black 0%,
+    $color-secondary-black 100%
+  );
+  color: white;
 }
 
 .skills {
