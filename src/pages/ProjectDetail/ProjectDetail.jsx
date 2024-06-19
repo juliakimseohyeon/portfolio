@@ -41,11 +41,14 @@ export default function ProjectDetail() {
             <h1 className="project-hero__title">
               {selectedProject.project_name}
             </h1>
-            <div className="project-hero__links">
-              <Link to={selectedProject.url}>
+            <div className="project-hero__link-group">
+              <Link to={selectedProject.url} className="project-hero__link">
                 <img src={iconUrl} />
               </Link>
-              <Link to={selectedProject.github_frontend}>
+              <Link
+                to={selectedProject.github_frontend}
+                className="project-hero__link"
+              >
                 <img src={iconGithub} />
               </Link>
             </div>
