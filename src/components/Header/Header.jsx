@@ -1,5 +1,6 @@
 import "./Header.scss";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Toggle from "../Toggle/Toggle";
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 import iconHamburger from "../../assets/icons/icon-hamburger.svg";
@@ -22,9 +23,9 @@ export default function Header() {
   return (
     <header>
       <nav>
-        <div className="nav--left">
-          <a className="nav__logo">Julia.Kim.SeoHyeon</a>
-        </div>
+        <Link to="/" className="nav--left">
+          <p className="nav__logo">Julia.Kim.SeoHyeon</p>
+        </Link>
         <div className="nav--right">
           <Toggle />
 
