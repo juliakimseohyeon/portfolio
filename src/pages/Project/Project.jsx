@@ -92,8 +92,10 @@ export default function Project() {
               <h3>{project.project_name}</h3>
               <p>{project.intro_text}</p>
               <div className="projects__item-tags">
-                {project.tags.map((tag) => (
-                  <p className="label">{tag}</p>
+                {project.tags.map((tag, idx) => (
+                  <p className="label" key={idx}>
+                    {tag}
+                  </p>
                 ))}
               </div>
             </Link>
