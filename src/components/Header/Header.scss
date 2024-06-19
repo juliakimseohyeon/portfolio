@@ -19,6 +19,7 @@ nav {
 .nav {
   &__logo {
     font-weight: 700;
+    transition: 0.2s;
   }
   &--right {
     @include display-flex(flex, row);
@@ -32,4 +33,12 @@ html.theme-dark .menu {
 
 html.theme-light .menu {
   background-color: $color-primary-purple;
+}
+
+html.theme-dark .nav__logo:hover {
+  color: $color-primary-teal;
+}
+
+html.theme-light .nav__logo:hover {
+  color: $color-primary-purple;
 }
