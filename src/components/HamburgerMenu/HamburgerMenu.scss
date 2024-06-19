@@ -31,6 +31,10 @@
     gap: 1rem;
   }
 
+  &__contact {
+    cursor: pointer;
+  }
+
   &__label {
     @include desktop {
       display: none;

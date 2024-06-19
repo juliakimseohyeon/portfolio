@@ -35,7 +35,7 @@ export default function Header() {
                 setHamburgerOpen(true);
               }}
             >
-              <img src={iconHamburger} alt="Open menu" />{" "}
+              <img src={iconHamburger} alt="Open menu" />
             </div>
           )}
 
