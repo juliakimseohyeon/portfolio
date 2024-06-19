@@ -20,15 +20,15 @@ export default function HamburgerMenu({ hamburgerOpen, setHamburgerOpen }) {
       <div className="hamburger__contact-group">
         <div className="hamburger__contact">
           <img src={iconGithub} alt="GitHub Icon" />
-          <p className="label">GitHub</p>
+          <p className="hamburger__label label">GitHub</p>
         </div>
         <div className="hamburger__contact">
           <img src={iconLinkedin} alt="LinkedIn Icon" />
-          <p className="label">LinkedIn</p>
+          <p className="hamburger__label label">LinkedIn</p>
         </div>
         <div className="hamburger__contact">
           <img src={iconEmail} alt="Email Icon" />
-          <p className="label">Email</p>
+          <p className="hamburger__label label">Email</p>
         </div>
       </div>
     </div>

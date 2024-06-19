@@ -17,6 +17,9 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
+    @include desktop {
+      display: none;
+    }
   }
 
   &__item {
@@ -26,5 +29,19 @@
   &__contact-group {
     @include display-flex(flex, row);
     gap: 1rem;
+  }
+
+  &__label {
+    @include desktop {
+      display: none;
+    }
+  }
+
+  @include desktop {
+    display: flex;
+    @include display-flex(flex, row);
+    position: relative;
+    height: 100%;
+    background: none;
   }
 }

@@ -9,8 +9,13 @@ nav {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 0.5rem;
+  cursor: pointer;
   @include display-flex(flex, row);
+  @include desktop {
+    display: none;
+  }
 }
+
 .nav {
   &__logo {
     font-weight: 700;
