@@ -1,6 +1,8 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 import Project from "./pages/Project/Project";
+import ProjectDetail from "./pages/ProjectDetail/ProjectDetail";
 import Header from "./components/Header/Header";
 
 function App() {
@@ -9,6 +11,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/projects" element={<Project />} />
+        <Route path="/projects/:id" element={<ProjectDetail />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,5 +1,6 @@
 import "./Project.scss";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import heroImg from "../../assets/images/const-julia-dark.png";
 import arrowDown from "../../assets/icons/icon-arrow-down.svg";
@@ -79,7 +80,11 @@ export default function Project() {
         <h2>Projects</h2>
         <div className="projects__gallery">
           {projects.map((project) => (
-            <div className="projects__item" key={project.id}>
+            <Link
+              to={`/projects/${project.id}`}
+              className="projects__item"
+              key={project.id}
+            >
               <img
                 className="projects__item-thumbnail"
                 src={`${import.meta.env.VITE_API_URL}${project.thumbnail}`}
@@ -91,7 +96,7 @@ export default function Project() {
                   <p className="label">{tag}</p>
                 ))}
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
