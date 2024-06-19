@@ -12,7 +12,7 @@ export default function Project() {
         <div className="hero__text">
           <h1>Hi, I'm Julia</h1>
           <h2>Scroll down for the good stuff</h2>
-          <img src={arrowDown} />
+          <img className="hero__icon" src={arrowDown} />
         </div>
         <div className="hero__image">
           <div className="hero__circle-group">
