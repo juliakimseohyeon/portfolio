@@ -6,7 +6,6 @@ nav {
 }
 
 .menu {
-  background-color: $color-primary-purple;
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 0.5rem;
@@ -20,4 +19,12 @@ nav {
     @include display-flex(flex, row);
     gap: 1rem;
   }
+}
+
+html.theme-dark .menu {
+  background-color: $color-primary-teal;
+}
+
+html.theme-light .menu {
+  background-color: $color-primary-purple;
 }
