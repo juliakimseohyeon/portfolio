@@ -1,4 +1,5 @@
 import "./HamburgerMenu.scss";
+import { Link } from "react-router-dom";
 import iconClose from "../../assets/icons/icon-close.svg";
 import iconLinkedin from "../../assets/icons/icon-linkedin.svg";
 import iconGithub from "../../assets/icons/icon-github.svg";
@@ -21,8 +22,13 @@ export default function HamburgerMenu({ hamburgerOpen, setHamburgerOpen }) {
       >
         <img src={iconClose} alt="Close menu" />
       </div>
-      <a className="hamburger__item">Projects</a>
-      <a className="hamburger__item">About Me</a>
+      <Link to="/" className="hamburger__item">
+        Projects
+      </Link>
+      <Link to="/about" className="hamburger__item">
+        About Me
+      </Link>
+
       <div className="hamburger__contact-group">
         <div
           className="hamburger__contact"
