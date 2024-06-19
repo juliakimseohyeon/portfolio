@@ -28,6 +28,7 @@ export default function Project() {
     getAllProjects();
   }, []);
 
+  console.log("Current projects: ", projects);
   return (
     <main className="container">
       <section className="hero">
@@ -77,20 +78,21 @@ export default function Project() {
       <section className="projects">
         <h2>Projects</h2>
         <div className="projects__gallery">
-          <div className="projects__item">
-            <img className="projects__item-thumbnail" src={kongThumbnail} />
-            <h3>Kong</h3>
-            <p>
-              Get ready to fall in love with nature! Kong is a gamified plant
-              identification app powered by OpenAI and StabilityAI which aims to
-              foster a love for nature in a fun and artful way.
-            </p>
-            <div className="projects__item-tags">
-              <p className="label">Full Stack</p>
-              <p className="label">Full Stack</p>
-              <p className="label">Full Stack</p>
+          {projects.map((project) => (
+            <div className="projects__item" key={project.id}>
+              <img
+                className="projects__item-thumbnail"
+                src={`${import.meta.env.VITE_API_URL}${project.thumbnail}`}
+              />
+              <h3>{project.project_name}</h3>
+              <p>{project.intro_text}</p>
+              <div className="projects__item-tags">
+                {project.tags.map((tag) => (
+                  <p className="label">{tag}</p>
+                ))}
+              </div>
             </div>
-          </div>
+          ))}
         </div>
       </section>
     </main>
