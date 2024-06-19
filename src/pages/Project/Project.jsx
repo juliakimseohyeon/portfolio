@@ -1,4 +1,6 @@
 import "./Project.scss";
+import { useEffect, useState } from "react";
+import axios from "axios";
 import heroImg from "../../assets/images/const-julia-dark.png";
 import arrowDown from "../../assets/icons/icon-arrow-down.svg";
 import kongThumbnail from "../../assets/images/kong-thumbnail-dark.png";
@@ -6,6 +8,26 @@ import Carousel from "../../components/Carousel/Carousel";
 import Typewriter from "typewriter-effect";
 
 export default function Project() {
+  const [projects, setProjects] = useState([]);
+
+  /* -------------------------------------------------------------------------- */
+  /*                      Function to get all project data                      */
+  /* -------------------------------------------------------------------------- */
+  useEffect(() => {
+    const getAllProjects = async () => {
+      try {
+        const response = await axios.get(
+          `${import.meta.env.VITE_API_URL}/projects`
+        );
+        console.log("Get all projects: ", response.data);
+        setProjects(response.data);
+      } catch (err) {
+        console.error("Error getting projects: ", err);
+      }
+    };
+    getAllProjects();
+  }, []);
+
   return (
     <main className="container">
       <section className="hero">
