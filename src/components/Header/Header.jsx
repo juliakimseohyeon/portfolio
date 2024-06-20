@@ -7,10 +7,10 @@ import iconHamburger from "../../assets/icons/icon-hamburger.svg";
 
 export default function Header() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1280); // Tracks whether the window width is greater than 1280px
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024); // Tracks whether the window width is greater than 1024px
 
   const handleResize = () => {
-    setIsDesktop(window.innerWidth >= 1280);
+    setIsDesktop(window.innerWidth >= 1024);
   };
 
   useEffect(() => {
