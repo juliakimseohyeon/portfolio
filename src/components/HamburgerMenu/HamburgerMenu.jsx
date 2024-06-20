@@ -22,10 +22,22 @@ export default function HamburgerMenu({ hamburgerOpen, setHamburgerOpen }) {
       >
         <img src={iconClose} alt="Close menu" />
       </div>
-      <Link to="/" className="hamburger__item">
+      <Link
+        to="/"
+        className="hamburger__item"
+        onClick={() => {
+          setHamburgerOpen(false);
+        }}
+      >
         Projects
       </Link>
-      <Link to="/about" className="hamburger__item">
+      <Link
+        to="/about"
+        className="hamburger__item"
+        onClick={() => {
+          setHamburgerOpen(false);
+        }}
+      >
         About Me
       </Link>
 
