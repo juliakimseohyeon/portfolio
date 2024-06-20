@@ -14,6 +14,9 @@
   overflow-x: hidden;
   overflow-y: scroll;
   perspective: 300px;
+  @include desktop {
+    width: 100vw;
+  }
 }
 
 .about-hero {
@@ -21,6 +24,9 @@
   height: 90vh;
   width: 100vw;
   transform-style: preserve-3d;
+  @include desktop {
+    width: 100vw;
+  }
   &__layer {
     position: absolute;
     top: 0;
@@ -28,13 +34,7 @@
     right: 0;
     bottom: 0;
   }
-  &__icon-group {
-    width: 100%;
-    @include display-flex(flex, row, space-around, baseline);
-    // position: absolute;
-    // bottom: 1rem;
-    z-index: -2;
-  }
+
   &__arrow {
     animation: moveIcon ease-in-out 1s;
     animation-direction: alternate;
@@ -58,6 +58,12 @@
   z-index: -5;
   filter: blur(2px);
   opacity: 0.5;
+  @include desktop {
+    background: url("../../assets/images/about-me-main-sky-desktop.png")
+      no-repeat center;
+    transform: translateZ(-250px) scale(1.833333333);
+    opacity: 0.25;
+  }
 }
 
 .mountains {
@@ -68,6 +74,11 @@
   z-index: -4;
   filter: blur(2px);
   opacity: 0.75;
+  @include desktop {
+    background: url("../../assets/images/about-me-main-mountains-lake-desktop.png")
+      no-repeat center;
+    transform: translateZ(-125px) scale(1.4167);
+  }
 }
 
 .me {
@@ -76,6 +87,10 @@
   background-size: cover;
   transform: translateZ(0) scale(1);
   z-index: -1;
+  @include desktop {
+    background: url("../../assets/images/about-me-foreground-desktop.png")
+      no-repeat center;
+  }
 }
 
 .hero-text {
@@ -89,11 +104,28 @@
 }
 
 .about-text {
+  &__icon-group {
+    width: 100%;
+    @include display-flex(flex, row, space-around, baseline);
+    z-index: -2;
+    @include desktop {
+      width: 30%;
+      gap: 1rem;
+    }
+  }
   &__group {
     padding: 2rem;
     padding-top: 0;
     @include display-flex(flex, column);
     gap: 2rem;
+    @include desktop {
+      margin: auto;
+      padding-bottom: 5rem;
+      gap: 4rem;
+      @include desktop {
+        width: 50%;
+      }
+    }
   }
   &__chunk {
     @include display-flex(flex, column);
@@ -103,12 +135,12 @@
     margin: 0;
   }
 }
+
 @include desktop {
   .sky,
   .mountains,
-  .lake,
-  .rocks,
   .me {
-    background-size: contain;
+    background-position: 50% 75%;
+    background-size: cover;
   }
 }

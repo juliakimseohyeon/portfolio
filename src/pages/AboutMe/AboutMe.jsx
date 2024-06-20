@@ -21,9 +21,9 @@ export default function AboutMe() {
           <div className="about-hero__layer me"></div>
         </div>
         <div className="about-text__group">
-          <div className="about-hero__icon-group">
+          <div className="about-text__icon-group">
             <div
-              className="about-hero__icon"
+              className="about-text__icon"
               onClick={() =>
                 openInNewTab("https://github.com/juliakimseohyeon")
               }
@@ -32,7 +32,7 @@ export default function AboutMe() {
               <p className="hamburger__label label">GitHub</p>
             </div>
             <div
-              className="about-hero__icon"
+              className="about-text__icon"
               onClick={() =>
                 openInNewTab("https://www.linkedin.com/in/julia-kim-seo-hyeon")
               }
@@ -41,14 +41,14 @@ export default function AboutMe() {
               <p className="hamburger__label label">LinkedIn</p>
             </div>
             <div
-              className="about-hero__icon"
+              className="about-text__icon"
               onClick={() => openInNewTab("mailto: juliakimseohyeon@gmail.com")}
             >
               <img src={iconEmail} alt="Email Icon" />
               <p className="hamburger__label label">Email</p>
             </div>
           </div>
-          <p>
+          <p className="about-text__text">
             Having a graphic design and UX/UI background, I know that creating a
             pretty website isn't enough. A developer should see the bigger
             picture, including the business objectives and technical
@@ -62,7 +62,7 @@ export default function AboutMe() {
               alt="Julia infront of Harbour Centre environmental graphic"
             />
             <h2 className="about-text__title">I'm used to wearing many hats</h2>
-            <p>
+            <p className="about-text__text">
               I transform from a designer that creates 8-foot-tall vinyl window
               graphics to a copywriter that captures readers' hearts with
               evocative words. It's all thanks to my passion for learning new
@@ -76,7 +76,7 @@ export default function AboutMe() {
               alt="Julia scuba diving"
             />
             <h2 className="about-text__title">I'm ready to dive deep</h2>
-            <p>
+            <p className="about-text__text">
               If you can't find me at my computer, I'm either hiking, knitting,
               kayaking, strumming the ukulele, learning a new language, or
               travelling. I have been to 15 countries so far, and I would like
@@ -89,10 +89,10 @@ export default function AboutMe() {
             <img
               className="about-image"
               src={imgCoffee}
-              alt="Julia with a horse"
+              alt="A coffee mug with the text 'What does the future hold? Arthritis'"
             />
             <h2 className="about-text__title">Let's grab coffee</h2>
-            <p>
+            <p className="about-text__text">
               Interested in hearing more about my projects? Want to hear some
               awesome dad jokes? Feel free to reach out to me by using any of
               the methods below!
