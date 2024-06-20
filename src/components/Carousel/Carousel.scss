@@ -6,12 +6,12 @@
     @include display-flex(flex, row);
     overflow: hidden;
     position: relative;
-    height: 6rem;
+    height: 6em;
     width: 100%;
   }
   &__track {
     @include display-flex(flex, row);
-    gap: 1rem;
+    gap: 1em;
     position: absolute;
     left: 0;
     height: 100%;

@@ -2,7 +2,7 @@
 @use "../../styles/partials/variables" as *;
 
 header {
-  padding: 2rem;
+  padding: 2em;
 }
 
 nav {
@@ -10,9 +10,9 @@ nav {
 }
 
 .menu {
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 0.5rem;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 0.5em;
   cursor: pointer;
   @include display-flex(flex, row);
   @include desktop {
@@ -27,7 +27,7 @@ nav {
   }
   &--right {
     @include display-flex(flex, row);
-    gap: 1rem;
+    gap: 1em;
   }
 }
 
