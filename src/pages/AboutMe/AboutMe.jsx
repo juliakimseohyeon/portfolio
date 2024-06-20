@@ -1,6 +1,7 @@
 import "./AboutMe.scss";
 import imgHc from "../../assets/images/about-me-hc.jpg";
 import imgSaddle from "../../assets/images/about-me-saddle-up.jpeg";
+import imgDiving from "../../assets/images/about-me-diving.jpg";
 import imgCoffee from "../../assets/images/about-me-coffee.jpg";
 import arrowDown from "../../assets/icons/icon-arrow-down.svg";
 import iconLinkedin from "../../assets/icons/icon-linkedin.svg";
@@ -71,10 +72,10 @@ export default function AboutMe() {
           <div className="about-text__chunk">
             <img
               className="about-image"
-              src={imgSaddle}
-              alt="Julia with a horse"
+              src={imgDiving}
+              alt="Julia scuba diving"
             />
-            <h2 className="about-text__title">I'm ready to saddle up</h2>
+            <h2 className="about-text__title">I'm ready to dive deep</h2>
             <p>
               If you can't find me at my computer, I'm either hiking, knitting,
               kayaking, strumming the ukulele, learning a new language, or
