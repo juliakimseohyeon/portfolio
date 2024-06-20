@@ -107,7 +107,7 @@ html.theme-light .hero__image {
     width: 80%;
   }
   @include desktop {
-    width: 50%;
+    width: 100%;
   }
   &__gallery,
   &__item {
@@ -115,10 +115,24 @@ html.theme-light .hero__image {
     @include display-flex(flex, column, space-between, flex-start);
     text-align: left;
     position: relative;
+    @include desktop {
+      @include display-flex(flex, row, space-between, center);
+    }
   }
 
   &__item-thumbnail {
     width: 100%;
+    @include desktop {
+      flex: 0;
+      width: 50%;
+    }
+  }
+  &__item-text-group {
+    @include desktop {
+      flex: 1;
+      width: 100%;
+      @include display-flex(flex, column, space-between, flex-start);
+    }
   }
   &__item-tags {
     @include display-flex(flex, row, flex-start, flex-start);

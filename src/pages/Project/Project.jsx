@@ -89,14 +89,18 @@ export default function Project() {
                 className="projects__item-thumbnail"
                 src={`${import.meta.env.VITE_API_URL}${project.thumbnail}`}
               />
-              <h3>{project.project_name}</h3>
-              <p className="projects__item-description">{project.intro_text}</p>
-              <div className="projects__item-tags">
-                {project.tags.map((tag, idx) => (
-                  <p className="projects__item-label label" key={idx}>
-                    {tag}
-                  </p>
-                ))}
+              <div className="projects__item-text-group">
+                <h3>{project.project_name}</h3>
+                <p className="projects__item-description">
+                  {project.intro_text}
+                </p>
+                <div className="projects__item-tags">
+                  {project.tags.map((tag, idx) => (
+                    <p className="projects__item-label label" key={idx}>
+                      {tag}
+                    </p>
+                  ))}
+                </div>
               </div>
             </Link>
           ))}
