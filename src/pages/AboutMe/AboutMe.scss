@@ -63,6 +63,8 @@
       no-repeat center;
     transform: translateZ(-250px) scale(1.833333333);
     opacity: 0.25;
+    background-position: 50% 75%;
+    background-size: cover;
   }
 }
 
@@ -78,6 +80,8 @@
     background: url("../../assets/images/about-me-main-mountains-lake-desktop.png")
       no-repeat center;
     transform: translateZ(-125px) scale(1.4167);
+    background-position: 50% 75%;
+    background-size: cover;
   }
 }
 
@@ -87,15 +91,26 @@
   background-size: cover;
   transform: translateZ(0) scale(1);
   z-index: -1;
+  @include tablet {
+    background: url("../../assets/images/about-me-foreground-tablet.png")
+      no-repeat center;
+    background-size: cover;
+  }
   @include desktop {
     background: url("../../assets/images/about-me-foreground-desktop.png")
       no-repeat center;
+    background-position: 50% 75%;
+    background-size: cover;
   }
 }
 
 .hero-text {
   background-size: cover;
   transform: translateZ(0) scale(1);
+  @include tablet {
+    position: absolute;
+    top: 10%;
+  }
 }
 
 .about-image {
@@ -118,9 +133,11 @@
     padding-top: 0;
     @include display-flex(flex, column);
     gap: 2rem;
+    @include tablet {
+      padding-bottom: 5rem;
+    }
     @include desktop {
       margin: auto;
-      padding-bottom: 5rem;
       gap: 4rem;
       @include desktop {
         width: 50%;
@@ -133,14 +150,5 @@
   }
   &__title {
     margin: 0;
-  }
-}
-
-@include desktop {
-  .sky,
-  .mountains,
-  .me {
-    background-position: 50% 75%;
-    background-size: cover;
   }
 }
