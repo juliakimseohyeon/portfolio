@@ -4,9 +4,17 @@
             stroke: #030a1d;
         }
 
+        .white:hover {
+            stroke: #644aad;
+        }
+
         @media (prefers-color-scheme: dark) {
             .white {
                 stroke: white
+            }
+
+            .white:hover {
+                stroke: #58c1da;
             }
         }
     </style>
