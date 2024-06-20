@@ -29,7 +29,7 @@ export default function AboutMe() {
               }
             >
               <img src={iconGithub} alt="GitHub Icon" />
-              <p className="hamburger__label label">GitHub</p>
+              <p className="about-text__label label">GitHub</p>
             </div>
             <div
               className="about-text__icon"
@@ -38,14 +38,14 @@ export default function AboutMe() {
               }
             >
               <img src={iconLinkedin} alt="LinkedIn Icon" />
-              <p className="hamburger__label label">LinkedIn</p>
+              <p className="about-text__label label">LinkedIn</p>
             </div>
             <div
               className="about-text__icon"
               onClick={() => openInNewTab("mailto: juliakimseohyeon@gmail.com")}
             >
               <img src={iconEmail} alt="Email Icon" />
-              <p className="hamburger__label label">Email</p>
+              <p className="about-text__label label">Email</p>
             </div>
           </div>
           <p className="about-text__text">
@@ -97,6 +97,33 @@ export default function AboutMe() {
               awesome dad jokes? Feel free to reach out to me by using any of
               the methods below!
             </p>
+          </div>
+          <div className="about-text__icon-group">
+            <div
+              className="about-text__icon"
+              onClick={() =>
+                openInNewTab("https://github.com/juliakimseohyeon")
+              }
+            >
+              <img src={iconGithub} alt="GitHub Icon" />
+              <p className="about-text__label label">GitHub</p>
+            </div>
+            <div
+              className="about-text__icon"
+              onClick={() =>
+                openInNewTab("https://www.linkedin.com/in/julia-kim-seo-hyeon")
+              }
+            >
+              <img src={iconLinkedin} alt="LinkedIn Icon" />
+              <p className="about-text__label label">LinkedIn</p>
+            </div>
+            <div
+              className="about-text__icon"
+              onClick={() => openInNewTab("mailto: juliakimseohyeon@gmail.com")}
+            >
+              <img src={iconEmail} alt="Email Icon" />
+              <p className="about-text__label label">Email</p>
+            </div>
           </div>
         </div>
       </div>
