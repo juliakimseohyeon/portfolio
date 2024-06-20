@@ -1,5 +1,4 @@
 import "./AboutMe.scss";
-import imgHero from "../../assets/images/about-me-main-background.jpg";
 import imgHc from "../../assets/images/about-me-hc.jpg";
 import imgSaddle from "../../assets/images/about-me-saddle-up.jpeg";
 import imgCoffee from "../../assets/images/about-me-coffee.jpg";
@@ -11,35 +10,40 @@ export default function AboutMe() {
   return (
     <div className="container">
       <div className="about-hero">
-        <h1>I'm always walking the extra mile</h1>
-        <img
-          className="about-image"
-          src={imgHero}
-          alt="photo of Julia at Panorama Ridge"
-        />
-        <div className="about-hero__icon-group">
-          <div
-            className="hamburger__contact"
-            onClick={() => openInNewTab("https://github.com/juliakimseohyeon")}
-          >
-            <img src={iconGithub} alt="GitHub Icon" />
-            <p className="hamburger__label label">GitHub</p>
-          </div>
-          <div
-            className="hamburger__contact"
-            onClick={() =>
-              openInNewTab("https://www.linkedin.com/in/julia-kim-seo-hyeon")
-            }
-          >
-            <img src={iconLinkedin} alt="LinkedIn Icon" />
-            <p className="hamburger__label label">LinkedIn</p>
-          </div>
-          <div
-            className="hamburger__contact"
-            onClick={() => openInNewTab("mailto: juliakimseohyeon@gmail.com")}
-          >
-            <img src={iconEmail} alt="Email Icon" />
-            <p className="hamburger__label label">Email</p>
+        <div className="about-hero__parallex">
+          <h1 className="about-hero__layer hero-text">
+            I'm always walking the extra mile
+          </h1>
+          <div className="about-hero__layer sky"></div>
+          <div className="about-hero__layer mountains"></div>
+          <div className="about-hero__layer lake"></div>
+          <div className="about-hero__layer me"></div>
+          <div className="about-hero__icon-group">
+            <div
+              className="hamburger__contact"
+              onClick={() =>
+                openInNewTab("https://github.com/juliakimseohyeon")
+              }
+            >
+              <img src={iconGithub} alt="GitHub Icon" />
+              <p className="hamburger__label label">GitHub</p>
+            </div>
+            <div
+              className="hamburger__contact"
+              onClick={() =>
+                openInNewTab("https://www.linkedin.com/in/julia-kim-seo-hyeon")
+              }
+            >
+              <img src={iconLinkedin} alt="LinkedIn Icon" />
+              <p className="hamburger__label label">LinkedIn</p>
+            </div>
+            <div
+              className="hamburger__contact"
+              onClick={() => openInNewTab("mailto: juliakimseohyeon@gmail.com")}
+            >
+              <img src={iconEmail} alt="Email Icon" />
+              <p className="hamburger__label label">Email</p>
+            </div>
           </div>
         </div>
       </div>

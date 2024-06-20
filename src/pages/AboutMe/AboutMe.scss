@@ -1,7 +1,78 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 
+.about-hero {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 300px;
+  &__parallex {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    transform-style: preserve-3d;
+  }
+  &__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &__icon-group {
+    width: 100%;
+    @include display-flex(flex, row, space-around, baseline);
+  }
+}
+
+.sky {
+  background: url("../../assets/images/about-me-main-sky.png") no-repeat center;
+  background-size: cover;
+  transform: translateZ(-400px) scale(2.33333333);
+  z-index: -5;
+}
+
+.mountains {
+  background: url("../../assets/images/about-me-main-mountains.png") no-repeat
+    center;
+  background-size: cover;
+  transform: translateZ(-250px) scale(1.833333333);
+  z-index: -4;
+}
+
+.lake {
+  background: url("../../assets/images/about-me-main-lake.png") no-repeat center;
+  background-size: cover;
+  transform: translateZ(-125px) scale(1.4167);
+  z-index: -3;
+}
+
+.me {
+  background: url("../../assets/images/about-me-foreground.png") no-repeat
+    center;
+  background-size: cover;
+  transform: translateZ(0) scale(1);
+  z-index: -1;
+}
+
+.hero-text {
+  background-size: cover;
+  transform: translateZ(0) scale(1);
+}
+
 .about-image {
   width: 100%;
   border-radius: 1rem;
+}
+
+@include desktop {
+  .sky,
+  .mountains,
+  .lake,
+  .rocks,
+  .me {
+    background-size: contain;
+  }
 }
