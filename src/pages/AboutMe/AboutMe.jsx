@@ -1,6 +1,5 @@
 import "./AboutMe.scss";
 import imgHc from "../../assets/images/about-me-hc.jpg";
-import imgSaddle from "../../assets/images/about-me-saddle-up.jpeg";
 import imgDiving from "../../assets/images/about-me-diving.jpg";
 import imgCoffee from "../../assets/images/about-me-coffee.jpg";
 import arrowDown from "../../assets/icons/icon-arrow-down.svg";
