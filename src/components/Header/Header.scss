@@ -1,6 +1,10 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 
+header {
+  padding: 2rem;
+}
+
 nav {
   @include display-flex(flex, row, space-between);
 }

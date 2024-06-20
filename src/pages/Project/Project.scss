@@ -2,7 +2,8 @@
 @use "../../styles/partials/variables" as *;
 
 .hero {
-  width: 100%;
+  padding: 2rem;
+  max-width: 100%;
   @include display-flex(flex, column);
   gap: 2rem;
   &__icon {
@@ -100,7 +101,8 @@ html.theme-light .hero__image {
 }
 
 .projects {
-  width: 100%;
+  padding: 2rem;
+  max-width: 100%;
   &__gallery,
   &__item {
     width: 100%;
@@ -115,8 +117,12 @@ html.theme-light .hero__image {
     flex-wrap: wrap;
     gap: 0 1rem;
   }
+  &__item-description {
+    margin-bottom: 1.5rem;
+  }
   &__item-label {
-    margin: 0.25rem 0;
+    margin: 0;
     font-weight: 300;
+    line-height: 1.5;
   }
 }
