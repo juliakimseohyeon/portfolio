@@ -10,7 +10,7 @@ import iconEmail from "../../assets/icons/icon-email.svg";
 
 export default function AboutMe() {
   return (
-    <main className="container about">
+    <main className="about">
       <div className="about-parallax">
         <section className="about-hero">
           <h1 className="about-hero__layer hero-text">

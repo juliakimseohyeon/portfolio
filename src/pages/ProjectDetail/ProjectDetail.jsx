@@ -33,7 +33,7 @@ export default function ProjectDetail() {
     return (
       <div className="container">
         <img
-          className="project-hero__image"
+          className="project-image"
           src={`${import.meta.env.VITE_API_URL}${selectedProject.image}`}
         />
         <div className="project-hero">
