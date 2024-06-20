@@ -31,7 +31,7 @@ export default function ProjectDetail() {
   } else {
     console.log("Selected project: ", selectedProject);
     return (
-      <div className="container">
+      <div className="project-detail">
         <img
           className="project-image"
           src={`${import.meta.env.VITE_API_URL}${selectedProject.image}`}
@@ -56,7 +56,7 @@ export default function ProjectDetail() {
           <div className="project-hero__tag-group">
             {selectedProject.tags &&
               selectedProject.tags.map((tag, idx) => (
-                <p key={idx} project-hero__tag>
+                <p key={idx} className="project-hero__tag label">
                   {tag}
                 </p>
               ))}

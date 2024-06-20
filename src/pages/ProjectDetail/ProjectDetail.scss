@@ -1,6 +1,13 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 
+.project-detail {
+  padding: 0 2em;
+  max-width: 100%;
+  @include display-flex(flex, column, normal, flex-start);
+  gap: 2em;
+}
+
 .project-image {
   width: 100%;
 }
@@ -39,6 +46,12 @@
   @include display-flex(flex, column, normal, flex-start);
   gap: 2em;
   padding-bottom: 5em;
+  @include tablet {
+    width: 75%;
+  }
+  @include desktop {
+    width: 60%;
+  }
 }
 
 // Dark mode Hero link style
