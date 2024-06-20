@@ -10,17 +10,17 @@ import iconEmail from "../../assets/icons/icon-email.svg";
 
 export default function AboutMe() {
   return (
-    <div className="container about">
+    <main className="container about">
       <div className="about-parallax">
-        <div className="about-hero">
+        <section className="about-hero">
           <h1 className="about-hero__layer hero-text">
             I'm always walking the extra mile
           </h1>
           <div className="about-hero__layer sky"></div>
           <div className="about-hero__layer mountains"></div>
           <div className="about-hero__layer me"></div>
-        </div>
-        <div className="about-text__group">
+        </section>
+        <section className="about-text__group">
           <div className="about-text__icon-group">
             <div
               className="about-text__icon"
@@ -125,8 +125,8 @@ export default function AboutMe() {
               <p className="about-text__label label">Email</p>
             </div>
           </div>
-        </div>
+        </section>
       </div>
-    </div>
+    </main>
   );
 }
