@@ -1,6 +1,6 @@
 import "./Toggle.scss";
 import { useEffect, useState } from "react";
-import { keepTheme, setTheme } from "../utils/themes";
+import { keepTheme, setTheme } from "../../utils/themes";
 
 export default function Toggle() {
   const [toggle, setToggle] = useState("dark");

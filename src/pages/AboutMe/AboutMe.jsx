@@ -1,4 +1,5 @@
 import "./AboutMe.scss";
+import { openInNewTab } from "../../utils/openNewTab";
 import imgHc from "../../assets/images/about-me-hc.jpg";
 import imgDiving from "../../assets/images/about-me-diving.jpg";
 import imgCoffee from "../../assets/images/about-me-coffee.jpg";
