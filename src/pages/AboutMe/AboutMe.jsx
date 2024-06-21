@@ -21,33 +21,6 @@ export default function AboutMe() {
           <div className="about-hero__layer me"></div>
         </section>
         <section className="about-text__group">
-          <div className="about-text__icon-group">
-            <div
-              className="about-text__icon"
-              onClick={() =>
-                openInNewTab("https://github.com/juliakimseohyeon")
-              }
-            >
-              <img src={iconGithub} alt="GitHub Icon" />
-              <p className="about-text__label label">GitHub</p>
-            </div>
-            <div
-              className="about-text__icon"
-              onClick={() =>
-                openInNewTab("https://www.linkedin.com/in/julia-kim-seo-hyeon")
-              }
-            >
-              <img src={iconLinkedin} alt="LinkedIn Icon" />
-              <p className="about-text__label label">LinkedIn</p>
-            </div>
-            <div
-              className="about-text__icon"
-              onClick={() => openInNewTab("mailto: juliakimseohyeon@gmail.com")}
-            >
-              <img src={iconEmail} alt="Email Icon" />
-              <p className="about-text__label label">Email</p>
-            </div>
-          </div>
           <p className="about-text__text">
             Having a graphic design and UX/UI background, I know that creating a
             pretty website isn't enough. A developer should see the bigger
