@@ -32,7 +32,7 @@ export default function Project() {
 
   console.log("Current projects: ", projects);
   return (
-    <main className="container">
+    <main className="project-container">
       <section className="hero">
         <div className="hero__text">
           <h1>Hi, I'm Julia</h1>

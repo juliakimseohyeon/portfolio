@@ -1,6 +1,16 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 
+.project-container {
+  padding: 0 2em;
+  max-width: 100%;
+  @include display-flex(flex, column);
+  gap: 5em;
+  @include tablet {
+    gap: 8em;
+  }
+}
+
 .hero {
   width: 100%;
   @include display-flex(flex, column);

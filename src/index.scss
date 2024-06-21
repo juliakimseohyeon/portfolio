@@ -79,13 +79,6 @@ html.theme-dark button {
   font-size: 0.85em;
 }
 
-.container {
-  padding: 0 2em;
-  max-width: 100%;
-  @include display-flex(flex, column);
-  gap: 2em;
-}
-
 .theme-light {
   color-scheme: light; // Will be used to trigger color change in SVGs
   color: $color-primary-blue;
