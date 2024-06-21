@@ -129,7 +129,6 @@
   &__icon-group {
     width: 100%;
     @include display-flex(flex, row, space-around, baseline);
-    z-index: -2;
     @include desktop {
       width: 30%;
       gap: 1em;
