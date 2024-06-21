@@ -7,10 +7,10 @@
   }
   &__label {
     @include display-flex(flex, column);
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.5em;
+    height: 2.5em;
     background-color: $color-primary-white;
-    border-radius: 0.5rem;
+    border-radius: 0.5em;
     cursor: pointer;
     transition: 0.2s;
   }
@@ -18,8 +18,8 @@
     background-size: cover;
     content: "";
     position: absolute;
-    width: 2rem;
-    height: 2rem;
+    width: 2em;
+    height: 2em;
     transition: 0.3s;
   }
   &__label--dark:before {

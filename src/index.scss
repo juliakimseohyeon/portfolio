@@ -47,14 +47,26 @@ p {
 }
 
 button {
+  width: 100%;
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 1em 1.5em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
   transition: border-color 0.25s;
+  background-color: $color-primary-teal;
+  color: $color-primary-white;
+}
+
+button:hover {
+  background-color: $color-primary-purple;
+  color: $color-primary-white;
+}
+
+html.theme-dark button {
+  background-color: $color-primary-black;
 }
 
 .label {

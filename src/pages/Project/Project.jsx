@@ -5,6 +5,7 @@ import axios from "axios";
 import heroImg from "../../assets/images/const-julia-dark.png";
 import arrowDown from "../../assets/icons/icon-arrow-down.svg";
 import kongThumbnail from "../../assets/images/kong-thumbnail-dark.png";
+import kongImg from "../../assets/images/kong-main.jpg";
 import Carousel from "../../components/Carousel/Carousel";
 import Typewriter from "typewriter-effect";
 
@@ -87,7 +88,7 @@ export default function Project() {
             >
               <img
                 className="projects__item-thumbnail"
-                src={`${import.meta.env.VITE_API_URL}${project.thumbnail}`}
+                src={`${import.meta.env.VITE_API_URL}${project.image}`}
               />
               <div className="projects__item-text-group">
                 <h3>{project.project_name}</h3>
@@ -101,6 +102,7 @@ export default function Project() {
                     </p>
                   ))}
                 </div>
+                <button>Read about {project.project_name}</button>
               </div>
             </Link>
           ))}
