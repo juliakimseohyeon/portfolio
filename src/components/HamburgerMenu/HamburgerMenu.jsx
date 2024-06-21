@@ -1,17 +1,12 @@
 import "./HamburgerMenu.scss";
 import { NavLink } from "react-router-dom";
+import { openInNewTab } from "../utils/openNewTab";
 import iconClose from "../../assets/icons/icon-close.svg";
 import iconLinkedin from "../../assets/icons/icon-linkedin.svg";
 import iconGithub from "../../assets/icons/icon-github.svg";
 import iconEmail from "../../assets/icons/icon-email.svg";
 
 export default function HamburgerMenu({ hamburgerOpen, setHamburgerOpen }) {
-  // Function to safely open URL in new tab
-  const openInNewTab = (url) => {
-    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
-    if (newWindow) newWindow.opener = null;
-  };
-
   return (
     <div className="hamburger">
       <div
