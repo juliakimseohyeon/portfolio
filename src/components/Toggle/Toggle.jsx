@@ -6,7 +6,7 @@ export default function Toggle() {
   const [toggle, setToggle] = useState("dark");
   const theme = localStorage.getItem("theme");
 
-  const handleOnClick = () => {
+  const handleOnChange = () => {
     if (theme === "theme-dark") {
       setTheme("theme-light");
       setToggle("light");
@@ -32,7 +32,7 @@ export default function Toggle() {
         type="checkbox"
         id="toggle"
         className="toggle__checkbox"
-        onClick={handleOnClick}
+        onChange={handleOnChange}
         checked={toggle === "light"}
       />
       <label
