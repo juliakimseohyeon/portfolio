@@ -134,11 +134,14 @@
       gap: 1em;
     }
   }
+  &__text {
+    text-align: left;
+  }
   &__group {
     padding: 2em;
     padding-top: 0;
     @include display-flex(flex, column);
-    gap: 2em;
+    gap: 3em;
     @include tablet {
       padding-bottom: 5em;
     }
@@ -151,8 +154,9 @@
     }
   }
   &__chunk {
-    @include display-flex(flex, column);
-    gap: 0.5em;
+    @include display-flex(flex, column, normal, flex-start);
+    gap: 1em;
+    text-align: left;
   }
   &__title {
     margin: 0;
