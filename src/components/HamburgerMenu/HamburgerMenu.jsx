@@ -1,5 +1,5 @@
 import "./HamburgerMenu.scss";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import iconClose from "../../assets/icons/icon-close.svg";
 import iconLinkedin from "../../assets/icons/icon-linkedin.svg";
 import iconGithub from "../../assets/icons/icon-github.svg";
@@ -22,24 +22,32 @@ export default function HamburgerMenu({ hamburgerOpen, setHamburgerOpen }) {
       >
         <img src={iconClose} alt="Close menu" />
       </div>
-      <Link
-        to="/"
-        className="hamburger__item"
+      <NavLink
+        to="/projects"
+        className={({ isActive }) =>
+          isActive
+            ? "hamburger__item hamburger__item--active"
+            : "hamburger__item"
+        }
         onClick={() => {
           setHamburgerOpen(false);
         }}
       >
         Projects
-      </Link>
-      <Link
+      </NavLink>
+      <NavLink
         to="/about"
-        className="hamburger__item"
+        className={({ isActive }) =>
+          isActive
+            ? "hamburger__item hamburger__item--active"
+            : "hamburger__item"
+        }
         onClick={() => {
           setHamburgerOpen(false);
         }}
       >
         About Me
-      </Link>
+      </NavLink>
 
       <div className="hamburger__contact-group">
         <div

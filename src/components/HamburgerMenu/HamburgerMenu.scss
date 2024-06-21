@@ -24,8 +24,11 @@
 
   &__item {
     color: $color-primary-white;
-    @include desktop {
-    }
+  }
+
+  &__item--active {
+    text-decoration: underline;
+    text-underline-offset: 0.75em;
   }
 
   &__item:hover,
