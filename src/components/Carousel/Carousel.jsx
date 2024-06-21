@@ -1,6 +1,6 @@
 import "./Carousel.scss";
 import CarouselItem from "../CarouselItem/CarouselItem";
-import { carouselDetails } from "./CarouselDetails/CarouselDetails";
+import { carouselDetails } from "../CarouselDetails/CarouselDetails";
 
 export default function LogoCarousel() {
   return (
