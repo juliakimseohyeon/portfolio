@@ -13,6 +13,11 @@
     border-radius: 0.5em;
     cursor: pointer;
     transition: 0.2s;
+    @include desktop {
+      width: 2em;
+      height: 2em;
+      border-radius: 0.25em;
+    }
   }
   &__label:before {
     background-size: cover;
@@ -21,6 +26,11 @@
     width: 2em;
     height: 2em;
     transition: 0.3s;
+    @include desktop {
+      background-position: center;
+      background-size: auto;
+      background-repeat: no-repeat;
+    }
   }
   &__label--dark:before {
     background-image: url("../../assets/icons/icon-moon.svg");

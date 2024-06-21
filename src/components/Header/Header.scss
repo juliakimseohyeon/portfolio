@@ -28,6 +28,10 @@ nav {
   &--right {
     @include display-flex(flex, row);
     gap: 1em;
+    @include desktop {
+      flex-direction: row-reverse;
+      gap: 2.5em;
+    }
   }
 }
 

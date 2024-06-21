@@ -24,6 +24,8 @@
 
   &__item {
     color: $color-primary-white;
+    @include desktop {
+    }
   }
 
   &__item:hover,
@@ -34,10 +36,16 @@
   &__contact-group {
     @include display-flex(flex, row);
     gap: 3em;
+    @include desktop {
+      gap: 1.5em;
+    }
   }
 
   &__contact {
     cursor: pointer;
+    @include desktop {
+      display: flex;
+    }
   }
 
   &__label {
