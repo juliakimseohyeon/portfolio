@@ -52,7 +52,7 @@ export default function AboutMe() {
             <p className="about-text__text">
               If you can't find me at my computer, I'm either hiking, knitting,
               kayaking, strumming the ukulele, learning a new language, or
-              travelling. I have been to 15 countries so far, and I would like
+              travelling. I have been to 21 countries so far, and I would like
               to visit at least a 100 more. I love to learn new skills and push
               myself. My most recent adventure has been to earn the PADI
               Scuba-diving Certificate!
