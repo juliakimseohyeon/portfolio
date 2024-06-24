@@ -60,7 +60,7 @@ export default function Project() {
                   .pauseFor(1000)
                   .deleteAll()
                   .typeString(
-                    `<span role="img" style="padding-left: 1em">hobbies: ['🥾', '🚣']</span>`
+                    `<span style="padding-left: 1em">hobbies: ['<span className="hero__typewriter-icon" role="img" aria-label="boots-emoji">🥾</span>', '<span className="hero__typewriter-icon" role="img" aria-label="camping-emoji">🏕️</span>']</span>`
                   )
                   .pauseFor(1000)
                   .start();
