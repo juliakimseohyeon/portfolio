@@ -46,29 +46,22 @@ export default function HamburgerMenu({ hamburgerOpen, setHamburgerOpen }) {
       </NavLink>
 
       <div className="hamburger__contact-group">
-        <div
-          className="hamburger__contact"
+        <IconGithub
+          className="hamburger__contact-icon"
           onClick={() => openInNewTab("https://github.com/juliakimseohyeon")}
-        >
-          <IconGithub className="hamburger__contact-icon" />
-          <p className="hamburger__label label">GitHub</p>
-        </div>
-        <div
-          className="hamburger__contact"
+        />
+
+        <IconLinkedin
+          className="hamburger__contact-icon"
           onClick={() =>
             openInNewTab("https://www.linkedin.com/in/julia-kim-seo-hyeon")
           }
-        >
-          <IconLinkedin className="hamburger__contact-icon" />
-          <p className="hamburger__label label">LinkedIn</p>
-        </div>
-        <div
-          className="hamburger__contact"
+        />
+
+        <IconEmail
+          className="hamburger__contact-icon"
           onClick={() => openInNewTab("mailto: juliakimseohyeon@gmail.com")}
-        >
-          <IconEmail className="hamburger__contact-icon" />
-          <p className="hamburger__label label">Email</p>
-        </div>
+        />
       </div>
     </div>
   );

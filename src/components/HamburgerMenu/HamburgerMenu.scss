@@ -61,12 +61,6 @@
     }
   }
 
-  &__label {
-    @include desktop {
-      display: none;
-    }
-  }
-
   @include desktop {
     display: flex;
     @include display-flex(flex, row);
