@@ -2,10 +2,7 @@ import "./Project.scss";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import heroImg from "../../assets/images/const-julia-dark.png";
-import arrowDown from "../../assets/icons/icon-arrow-down.svg";
-import kongThumbnail from "../../assets/images/kong-thumbnail-dark.png";
-import kongImg from "../../assets/images/kong-main.jpg";
+import IconArrowDown from "../../assets/icons/IconArrowDown";
 import Carousel from "../../components/Carousel/Carousel";
 import Typewriter from "typewriter-effect";
 
@@ -37,7 +34,7 @@ export default function Project() {
         <div className="hero__text">
           <h1>Hi, I'm Julia</h1>
           <h2>Scroll down for the good stuff</h2>
-          <img className="hero__icon" src={arrowDown} />
+          <IconArrowDown className="hero__icon" />
         </div>
         <div className="hero__image">
           <div className="hero__circle-group">
