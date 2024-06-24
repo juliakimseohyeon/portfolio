@@ -134,6 +134,19 @@
       gap: 1em;
     }
   }
+
+  &__icon {
+    overflow: visible;
+    cursor: pointer;
+    width: 1.5em;
+    stroke: $color-primary-blue;
+    fill: none;
+    &:hover {
+      stroke: $color-primary-purple;
+      fill: none;
+    }
+  }
+
   &__text {
     text-align: left;
   }
@@ -160,5 +173,13 @@
   }
   &__title {
     margin: 0;
+  }
+}
+
+// Dark mode icon style
+html.theme-dark .about-text__icon {
+  stroke: $color-primary-white;
+  &:hover {
+    stroke: $color-primary-teal;
   }
 }

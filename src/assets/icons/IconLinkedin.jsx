@@ -13,6 +13,8 @@ const iconLinkedin = (props) => (
       style={{
         fill: "none",
         strokeWidth: ".6px",
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
       }}
     />
     <path

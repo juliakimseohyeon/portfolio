@@ -3,10 +3,9 @@ import { openInNewTab } from "../../utils/openNewTab";
 import imgHc from "../../assets/images/about-me-hc.jpg";
 import imgDiving from "../../assets/images/about-me-diving.jpg";
 import imgCoffee from "../../assets/images/about-me-coffee.jpg";
-import arrowDown from "../../assets/icons/icon-arrow-down.svg";
-import iconLinkedin from "../../assets/icons/icon-linkedin.svg";
-import iconGithub from "../../assets/icons/icon-github.svg";
-import iconEmail from "../../assets/icons/icon-email.svg";
+import IconLinkedin from "../../assets/icons/IconLinkedin";
+import IconGithub from "../../assets/icons/IconGithub";
+import IconEmail from "../../assets/icons/IconEmail";
 
 export default function AboutMe() {
   return (
@@ -72,31 +71,24 @@ export default function AboutMe() {
             </p>
           </div>
           <div className="about-text__icon-group">
-            <div
+            <IconGithub
               className="about-text__icon"
               onClick={() =>
                 openInNewTab("https://github.com/juliakimseohyeon")
               }
-            >
-              <img src={iconGithub} alt="GitHub Icon" />
-              <p className="about-text__label label">GitHub</p>
-            </div>
-            <div
+            />
+
+            <IconLinkedin
               className="about-text__icon"
               onClick={() =>
                 openInNewTab("https://www.linkedin.com/in/julia-kim-seo-hyeon")
               }
-            >
-              <img src={iconLinkedin} alt="LinkedIn Icon" />
-              <p className="about-text__label label">LinkedIn</p>
-            </div>
-            <div
+            />
+
+            <IconEmail
               className="about-text__icon"
               onClick={() => openInNewTab("mailto: juliakimseohyeon@gmail.com")}
-            >
-              <img src={iconEmail} alt="Email Icon" />
-              <p className="about-text__label label">Email</p>
-            </div>
+            />
           </div>
         </section>
       </div>

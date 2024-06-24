@@ -53,6 +53,7 @@
   }
 
   &__contact-icon {
+    overflow: visible;
     cursor: pointer;
     width: 1.5em;
     stroke: $color-primary-blue;

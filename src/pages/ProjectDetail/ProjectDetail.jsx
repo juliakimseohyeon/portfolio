@@ -2,8 +2,8 @@ import "./ProjectDetail.scss";
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
-import iconGithub from "../../assets/icons/icon-github.svg";
-import iconUrl from "../../assets/icons/icon-url.svg";
+import IconGithub from "../../assets/icons/IconGithub";
+import IconUrl from "../../assets/icons/IconUrl";
 
 export default function ProjectDetail() {
   const [selectedProject, setSelectedProject] = useState({});
@@ -43,13 +43,13 @@ export default function ProjectDetail() {
             </h1>
             <div className="project-hero__link-group">
               <Link to={selectedProject.url} className="project-hero__link">
-                <img src={iconUrl} />
+                <IconUrl />
               </Link>
               <Link
                 to={selectedProject.github_frontend}
                 className="project-hero__link"
               >
-                <img src={iconGithub} />
+                <IconGithub />
               </Link>
             </div>
           </div>
