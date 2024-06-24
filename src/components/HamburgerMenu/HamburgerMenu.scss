@@ -39,6 +39,7 @@
   &__contact-group {
     @include display-flex(flex, row);
     gap: 3em;
+    cursor: pointer;
     @include desktop {
       gap: 1.5em;
     }
@@ -48,6 +49,15 @@
     cursor: pointer;
     @include desktop {
       display: flex;
+    }
+  }
+
+  &__contact-icon {
+    cursor: pointer;
+    width: 1.5em;
+    stroke: $color-primary-blue;
+    &:hover {
+      stroke: $color-primary-purple;
     }
   }
 
@@ -71,6 +81,14 @@ html.theme-dark .hamburger {
   background-color: $color-primary-blue;
   @include desktop {
     background: none;
+  }
+}
+
+// Dark mode menu style
+html.theme-dark .hamburger__contact-icon {
+  stroke: $color-primary-white;
+  &:hover {
+    stroke: $color-primary-teal;
   }
 }
 
