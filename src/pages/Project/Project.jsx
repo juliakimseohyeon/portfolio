@@ -55,12 +55,12 @@ export default function Project() {
               onInit={(typewriter) => {
                 typewriter
                   .typeString(
-                    `<span style="padding-left: 1em">likes: ['<i class="fa-solid fa-cat"></i>', '<i class="fa-solid fa-tree"></i>']</span>`
+                    `<span style="padding-left: 1em">likes: ['<span className="hero__typewriter-icon" role="img" aria-label="cat-emoji">😻</span>', '<span className="hero__typewriter-icon" role="img" aria-label="leaf-emoji">🌿</span>']</span>`
                   )
                   .pauseFor(1000)
                   .deleteAll()
                   .typeString(
-                    `<span role="img" style="padding-left: 1em">hobbies: ['<i class="fa-solid fa-person-hiking"></i>', '<i class="fa-solid fa-plane"></i>']</span>`
+                    `<span role="img" style="padding-left: 1em">hobbies: ['🥾', '🚣']</span>`
                   )
                   .pauseFor(1000)
                   .start();
