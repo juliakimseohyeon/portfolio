@@ -1,10 +1,10 @@
 import * as React from "react";
-const IconArrowDown = (props) => (
+const IconClose = (props) => (
   <svg
-    className="hero__icon"
+    className="hamburger__icon"
     xmlns="http://www.w3.org/2000/svg"
-    id="Layer_1"
-    data-name="Icon_arrow_down"
+    id="Icon-close"
+    data-name="Icon close"
     viewBox="0 0 11.5 11.5"
     {...props}
   >
@@ -15,8 +15,9 @@ const IconArrowDown = (props) => (
         strokeLinecap: "round",
         strokeLinejoin: "round",
       }}
-      d="M5.8.4v10M10.8 6.1l-5 5.1L.7 6.1"
+      d="M10.8.7.7 10.8M10.8 10.8.7.7"
+      className="cls-1"
     />
   </svg>
 );
-export default IconArrowDown;
+export default IconClose;

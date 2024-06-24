@@ -2,7 +2,7 @@ import "./HamburgerMenu.scss";
 import { NavLink } from "react-router-dom";
 import { ReactSVG } from "react-svg";
 import { openInNewTab } from "../../utils/openNewTab";
-import iconClose from "../../assets/icons/icon-close.svg";
+import IconClose from "../../assets/icons/IconClose";
 import IconLinkedin from "../../assets/icons/IconLinkedin";
 import IconGithub from "../../assets/icons/IconGithub";
 import IconEmail from "../../assets/icons/IconEmail";
@@ -10,14 +10,12 @@ import IconEmail from "../../assets/icons/IconEmail";
 export default function HamburgerMenu({ hamburgerOpen, setHamburgerOpen }) {
   return (
     <div className="hamburger">
-      <div
+      <IconClose
         className="hamburger__icon"
         onClick={() => {
           setHamburgerOpen(false);
         }}
-      >
-        <img src={iconClose} alt="Close menu" />
-      </div>
+      />
       <NavLink
         to="/projects"
         className={({ isActive }) =>
