@@ -30,6 +30,19 @@ export default function HamburgerMenu({ hamburgerOpen, setHamburgerOpen }) {
         Projects
       </NavLink>
       <NavLink
+        to="/graphic-projects"
+        className={({ isActive }) =>
+          isActive
+            ? "hamburger__item hamburger__item--active"
+            : "hamburger__item"
+        }
+        onClick={() => {
+          setHamburgerOpen(false);
+        }}
+      >
+        Graphic Projects
+      </NavLink>
+      <NavLink
         to="/about"
         className={({ isActive }) =>
           isActive
