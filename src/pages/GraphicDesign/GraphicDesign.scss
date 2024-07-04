@@ -1,0 +1,24 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.graphic {
+  &__container {
+    padding: 0 2em 5em;
+    max-width: 100%;
+    @include display-flex(flex, column);
+    gap: 5em;
+    @include tablet {
+      gap: 8em;
+    }
+  }
+  &__gallery,
+  &__item {
+    @include display-flex(flex, column);
+    width: 100%;
+    gap: 2em;
+  }
+  &__image {
+    width: 100%;
+    border-radius: 1em;
+  }
+}
