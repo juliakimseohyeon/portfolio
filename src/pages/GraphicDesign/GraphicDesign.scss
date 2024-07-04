@@ -17,8 +17,33 @@
     width: 100%;
     gap: 2em;
   }
+  &__gallery {
+    @include tablet {
+      gap: 4em;
+    }
+  }
+  &__tag-group {
+    @include tablet {
+      @include display-flex(flex, row);
+      gap: 1em;
+    }
+  }
+  &__image-group {
+    @include display-flex(flex, column);
+    gap: 2em;
+    @include tablet {
+      @include display-flex(flex, row, space-between);
+      flex-wrap: wrap;
+    }
+  }
   &__image {
     width: 100%;
     border-radius: 1em;
+    @include tablet {
+      width: 47%;
+    }
+    @include desktop {
+      width: 30%;
+    }
   }
 }

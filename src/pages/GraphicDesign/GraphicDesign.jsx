@@ -35,19 +35,23 @@ export default function GraphicDesign() {
             <div className="graphic__item" key={project.id}>
               <div className="graphic__text-group">
                 <h3>{project.project_name}</h3>
-                {project.tags.map((tag, idx) => (
-                  <p className="graphic__item-label label" key={idx}>
-                    {tag}
-                  </p>
+                <div className="graphic__tag-group">
+                  {project.tags.map((tag, idx) => (
+                    <p className="graphic__item-label label" key={idx}>
+                      {tag}
+                    </p>
+                  ))}
+                </div>
+              </div>
+              <div className="graphic__image-group">
+                {project.images.map((image, idx) => (
+                  <img
+                    src={`${import.meta.env.VITE_API_URL}${image}`}
+                    key={idx}
+                    className="graphic__image"
+                  />
                 ))}
               </div>
-              {project.images.map((image, idx) => (
-                <img
-                  src={`${import.meta.env.VITE_API_URL}${image}`}
-                  key={idx}
-                  className="graphic__image"
-                />
-              ))}
             </div>
           ))}
       </section>
