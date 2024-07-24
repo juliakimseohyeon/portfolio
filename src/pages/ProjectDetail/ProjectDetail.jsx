@@ -4,38 +4,23 @@ import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import IconGithub from "../../assets/icons/IconGithub";
 import IconUrl from "../../assets/icons/IconUrl";
+import { projects } from "../../data/Projects";
 
-export default function ProjectDetail() {
-  const [selectedProject, setSelectedProject] = useState({});
+export default function ProjectDetail({ selectedProject, setSelectedProject }) {
   const { id } = useParams();
 
   /* -------------------------------------------------------------------------- */
-  /*                   Function to get specific project detail                  */
+  /*         Function to load selected project details on initial mount         */
   /* -------------------------------------------------------------------------- */
   useEffect(() => {
-    const getOneProject = async () => {
-      try {
-        const response = await axios.get(
-          `${import.meta.env.VITE_API_URL}/projects/${id}`
-        );
-        setSelectedProject(response.data);
-      } catch (err) {
-        console.error("Error getting project detail: ", err);
-      }
-    };
-    getOneProject();
-  }, [id]);
+    setSelectedProject(projects[id]);
+  });
 
-  if (!selectedProject) {
-    return <h1>Loading project details...</h1>;
-  } else {
+  if (selectedProject) {
     console.log("Selected project: ", selectedProject);
     return (
       <div className="project-detail">
-        <img
-          className="project-image"
-          src={`${import.meta.env.VITE_API_URL}${selectedProject.image}`}
-        />
+        <img className="project-image" src={selectedProject.image} />
         <div className="project-hero">
           <div className="project-hero__text">
             <h1 className="project-hero__title">

@@ -1,33 +1,12 @@
 import "./Project.scss";
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import IconArrowDown from "../../assets/icons/IconArrowDown";
 import Carousel from "../../components/Carousel/Carousel";
 import Typewriter from "typewriter-effect";
+import { projects } from "../../data/Projects";
 
-export default function Project() {
-  const [projects, setProjects] = useState([]);
-
-  /* -------------------------------------------------------------------------- */
-  /*                      Function to get all project data                      */
-  /* -------------------------------------------------------------------------- */
-  useEffect(() => {
-    const getAllProjects = async () => {
-      try {
-        const response = await axios.get(
-          `${import.meta.env.VITE_API_URL}/projects`
-        );
-        console.log("Get all projects: ", response.data);
-        setProjects(response.data);
-      } catch (err) {
-        console.error("Error getting projects: ", err);
-      }
-    };
-    getAllProjects();
-  }, []);
-
-  console.log("Current projects: ", projects);
+export default function Project({ setSelectedProject }) {
   return (
     <main className="project-container">
       <section className="hero">
@@ -82,11 +61,9 @@ export default function Project() {
               to={`/projects/${project.id}`}
               className="projects__item"
               key={project.id}
+              onClick={() => setSelectedProject(project)}
             >
-              <img
-                className="projects__item-thumbnail"
-                src={`${import.meta.env.VITE_API_URL}${project.image}`}
-              />
+              <img className="projects__item-thumbnail" src={project.image} />
               <div className="projects__item-text-group">
                 <h3>{project.project_name}</h3>
                 <p className="projects__item-description">
