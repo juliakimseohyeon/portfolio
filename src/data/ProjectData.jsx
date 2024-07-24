@@ -52,7 +52,7 @@ export const projects = [
     project_name: "Bubblefish UX Design",
     image: imgBubblefish,
     intro_text:
-      "Get ready to fall in love with nature! Kong is a gamified plant identification app powered by OpenAI and StabilityAI which aims to foster a love for nature in a fun and artful way.",
+      "'Dive in' to the art of user-centric design with Bubblefish UX! Their revamped website showcases their commitment to creating accessible, modern, and visually engaging user experiences.",
     url: "https://www.bubblefishux.design/",
     tags: ["Front End", "Tailwind", "Accessibility", "UI Design", "Animation"],
     description: {
