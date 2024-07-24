@@ -140,15 +140,18 @@ html.theme-dark .hero__icon {
   @include desktop {
     width: 100%;
   }
+  &__gallery {
+    gap: 2em;
+    @include desktop {
+      @include display-flex(flex, column);
+    }
+  }
   &__gallery,
   &__item {
     width: 100%;
     @include display-flex(flex, column, space-between, flex-start);
     text-align: left;
     position: relative;
-    @include desktop {
-      @include display-flex(flex, row, space-between, stretch);
-    }
   }
   &__item {
     background: rgba($color-primary-teal, 0.2);
@@ -160,6 +163,11 @@ html.theme-dark .hero__icon {
     &:hover {
       background: rgba($color-primary-teal, 0.4);
       transform: scale(1.02);
+    }
+    @include desktop {
+      @include display-flex(flex, row, space-between, stretch);
+      flex: 1;
+      width: 100%;
     }
   }
   &__item-thumbnail {
