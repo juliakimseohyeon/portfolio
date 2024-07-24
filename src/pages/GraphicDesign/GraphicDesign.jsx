@@ -1,28 +1,8 @@
 import "./GraphicDesign.scss";
-import { useEffect, useState } from "react";
 import axios from "axios";
+import { graphicProjects } from "../../data/GraphicProjectData";
 
 export default function GraphicDesign() {
-  const [graphicProjects, setGraphicProjects] = useState([]);
-  /* -------------------------------------------------------------------------- */
-  /*                  Function to get all graphic project data                  */
-  /* -------------------------------------------------------------------------- */
-  useEffect(() => {
-    const getAllGraphicProjects = async () => {
-      try {
-        const response = await axios.get(
-          `${import.meta.env.VITE_API_URL}/graphic-projects`
-        );
-        console.log("Get all graphic projects: ", response.data);
-        setGraphicProjects(response.data);
-      } catch (err) {
-        console.error("Error getting projects: ", err);
-      }
-    };
-    getAllGraphicProjects();
-  }, []);
-
-  console.log("Current graphic projects: ", graphicProjects);
   return (
     <main className="graphic__container">
       <section className="graphic__hero">
@@ -44,11 +24,7 @@ export default function GraphicDesign() {
               </div>
               <div className="graphic__image-group">
                 {project.images.map((image, idx) => (
-                  <img
-                    src={`${import.meta.env.VITE_API_URL}${image}`}
-                    key={idx}
-                    className="graphic__image"
-                  />
+                  <img src={image} key={idx} className="graphic__image" />
                 ))}
               </div>
             </div>
