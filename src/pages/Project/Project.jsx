@@ -4,6 +4,7 @@ import axios from "axios";
 import IconArrowDown from "../../assets/icons/IconArrowDown";
 import Carousel from "../../components/Carousel/Carousel";
 import Typewriter from "typewriter-effect";
+import Testimonials from "../../components/Testimonials/Testimonials";
 import { projects } from "../../data/ProjectData";
 
 export default function Project({ setSelectedProject }) {
@@ -81,6 +82,9 @@ export default function Project({ setSelectedProject }) {
             </Link>
           ))}
         </div>
+      </section>
+      <section className="testimonials">
+        <Testimonials />
       </section>
     </main>
   );
