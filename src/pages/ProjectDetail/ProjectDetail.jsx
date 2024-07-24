@@ -5,6 +5,7 @@ import axios from "axios";
 import IconGithub from "../../assets/icons/IconGithub";
 import IconUrl from "../../assets/icons/IconUrl";
 import { projects } from "../../data/ProjectData";
+import { openInNewTab } from "../../utils/openNewTab";
 
 export default function ProjectDetail({ selectedProject, setSelectedProject }) {
   const { id } = useParams();
@@ -28,13 +29,16 @@ export default function ProjectDetail({ selectedProject, setSelectedProject }) {
             </h1>
             <div className="project-hero__link-group">
               {selectedProject.url && (
-                <Link to={selectedProject.url} className="project-hero__link">
+                <Link
+                  className="project-hero__link"
+                  onClick={() => openInNewTab(selectedProject.url)}
+                >
                   <IconUrl />
                 </Link>
               )}
               {selectedProject.github_frontend && (
                 <Link
-                  to={selectedProject.github_frontend}
+                  onClick={() => openInNewTab(selectedProject.github_frontend)}
                   className="project-hero__link"
                 >
                   <IconGithub />
