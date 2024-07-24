@@ -1,5 +1,5 @@
 import "./GraphicDesign.scss";
-import axios from "axios";
+import heroImg from "../../assets/images/graphic-projects/graphics-hero.png";
 import { graphicProjects } from "../../data/GraphicProjectData";
 
 export default function GraphicDesign() {

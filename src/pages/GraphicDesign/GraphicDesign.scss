@@ -3,12 +3,22 @@
 
 .graphic {
   &__container {
-    padding: 0 2em 5em;
+    padding-bottom: 5em;
     max-width: 100%;
     @include display-flex(flex, column);
     gap: 5em;
     @include tablet {
       gap: 8em;
+    }
+  }
+  &__hero {
+    height: 75vh;
+    background-image: url(../../assets/images/graphic-projects/graphics-hero.png);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    @include desktop {
+      height: 100vh;
     }
   }
   &__gallery,
@@ -18,6 +28,7 @@
     gap: 2em;
   }
   &__gallery {
+    padding: 0 2rem;
     @include tablet {
       gap: 4em;
     }
