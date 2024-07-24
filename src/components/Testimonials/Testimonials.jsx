@@ -16,6 +16,7 @@ export default function Testimonials() {
               )
             }
             className="testimonials__item"
+            key={testimonial.id}
           >
             <img className="testimonials__photo" src={testimonial.photo} />
             <div className="testimonials__text-group">
