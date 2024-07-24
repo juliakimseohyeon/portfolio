@@ -26,8 +26,7 @@ export default function GraphicDesign() {
   return (
     <main className="graphic__container">
       <section className="graphic__hero">
-        <h1>My projects B.C.</h1>
-        <h2>(Before Coding)</h2>
+        <h1>My graphic projects B.C. (Before Coding)</h1>
       </section>
       <section className="graphic__gallery">
         {graphicProjects !== "[]" &&
