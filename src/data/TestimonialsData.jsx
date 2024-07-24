@@ -7,13 +7,13 @@ export const testimonials = [
     photo: photoGrace,
     name: "Grace Noh",
     relationship: "Lead Designer at TEDxEmilyCarrU",
-    text: "Julia is very intelligent, creative and friendly. She's dependable, self motivated and great with project management. She is also a fantastic team player and has excellent communication skills. She delivers high quality, detail oriented work and her graphic design and motion graphic skills are top-notch. I had a great experience at working with her on multiple projects.",
+    text: "Julia is very intelligent, creative and friendly. She's dependable, self motivated and great with project management. She is also a fantastic team player and has excellent communication skills. She delivers high quality, detail oriented work and her skills are top-notch. I had a great experience at working with her on multiple projects.",
   },
   {
     id: 0,
     photo: photoGuillermo,
     name: "Guillermo Moreno",
     relationship: "Lead UX Designer at Bubblefish UX Design",
-    text: "Julia excels at working closely with team members and stakeholders, as well as independently. Her excellent communication skills and genuine enthusiasm for collaborating with individuals from diverse backgrounds and areas of expertise make her a pleasure to work with. Julia has a solid knowledge of software programs and a keen eye for design. She is eager to see projects through from start to finish, displaying initiative, creativity, and adept problem-solving skills. Additionally, she is curious and committed to learning, quickly gaining proficiency when exposed to unfamiliar technology and concepts.",
+    text: "Julia has a solid knowledge of software programs and a keen eye for design. She is eager to see projects through from start to finish, displaying initiative, creativity, and adept problem-solving skills. Additionally, she is curious and committed to learning, quickly gaining proficiency when exposed to unfamiliar technology and concepts.",
   },
 ];

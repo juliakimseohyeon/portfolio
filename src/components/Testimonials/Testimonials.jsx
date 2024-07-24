@@ -8,12 +8,14 @@ export default function Testimonials() {
       <div className="testimonials__gallery">
         {testimonials.map((testimonial) => (
           <div className="testimonials__item">
-            <div className="testimonials__person">
-              <img src={testimonial.photo} />
-              <h3>{testimonial.name}</h3>
-              <p>{testimonial.relationship}</p>
+            <img className="testimonials__photo" src={testimonial.photo} />
+            <div className="testimonials__text-group">
+              <h3 className="testimonials__name">{testimonial.name}</h3>
+              <p className="testimonials__label label">
+                {testimonial.relationship}
+              </p>
+              <p className="testimonials__text">{testimonial.text}</p>
             </div>
-            <p>{testimonial.text}</p>
           </div>
         ))}
       </div>
