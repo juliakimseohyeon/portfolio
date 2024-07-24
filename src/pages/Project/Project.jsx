@@ -83,9 +83,7 @@ export default function Project({ setSelectedProject }) {
           ))}
         </div>
       </section>
-      <section className="testimonials">
-        <Testimonials />
-      </section>
+      <Testimonials />
     </main>
   );
 }

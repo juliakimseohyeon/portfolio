@@ -3,12 +3,17 @@
 
 .testimonials {
   padding-bottom: 5em;
-  &__container {
+  max-width: 100%;
+  @include tablet {
+    width: 80%;
+  }
+  @include desktop {
     width: 100%;
   }
   &__gallery,
   &__item {
     @include display-flex(flex, column);
+    width: 100%;
   }
   &__gallery {
     gap: 4em;
@@ -24,13 +29,20 @@
       background: rgba($color-primary-purple, 0.4);
       transform: scale(1.02);
     }
+    @include tablet {
+      @include display-flex(flex, row, space-between, stretch);
+    }
     @include desktop {
-      @include display-flex(flex, row, space-between);
+      align-items: center;
     }
   }
   &__photo {
     width: 100%;
     border-radius: 0.5em;
+    @include tablet {
+      width: 50%;
+      object-fit: cover;
+    }
     @include desktop {
       width: 30%;
     }
@@ -48,7 +60,7 @@
     margin: 0;
   }
   &__text {
-    @include desktop {
+    @include tablet {
       flex: 1;
       width: 100%;
     }

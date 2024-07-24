@@ -5,7 +5,7 @@ import { openInNewTab } from "../../utils/openNewTab";
 
 export default function Testimonials() {
   return (
-    <div className="testimonials__container">
+    <section className="testimonials">
       <h2>Words on the street</h2>
       <div className="testimonials__gallery">
         {testimonials.map((testimonial) => (
@@ -29,6 +29,6 @@ export default function Testimonials() {
           </Link>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
