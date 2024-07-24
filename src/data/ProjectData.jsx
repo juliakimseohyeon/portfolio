@@ -1,4 +1,5 @@
 import imgKong from "../assets/images/projects/kong-image.jpg";
+import imgBubblefish from "../assets/images/projects/bubblefish-image.jpg";
 
 export const projects = [
   {
@@ -43,6 +44,32 @@ export const projects = [
         "Ability to send multiple photos to API for better identification",
         "Google Maps integration to visually represent plant's habitat",
         "Featured Plants page to show nearby plants that can be added to the collection",
+      ],
+    },
+  },
+  {
+    id: 1,
+    project_name: "Bubblefish UX Design",
+    image: imgBubblefish,
+    intro_text:
+      "Get ready to fall in love with nature! Kong is a gamified plant identification app powered by OpenAI and StabilityAI which aims to foster a love for nature in a fun and artful way.",
+    url: "https://www.bubblefishux.design/",
+    tags: ["Front End", "Tailwind", "Accessibility", "UI Design", "Animation"],
+    description: {
+      "Who is Bubblefish UX Design":
+        "Bubblefish UX Design is a Brighton-based UX consultancy. They have provided holistic UX design services to major UK companies such as 'Chambers and Partners', 'HMRC', 'Public Health Wales', and 'Tristar Worldwide'.",
+      "Why was the new website necessary?":
+        "Because their focus is on creating designs that is accessible and easy to use for everyone, Bubblefish UX needed a website that would also embody those values. They also wanted to move away from their old website design to something that was more modern and polished.",
+      "Tech Stack": ["React", "Tailwind"],
+      "Key Learnings": [
+        "How to write code that is accessible, incorporating aria-labels, skip-to-main-content features, and key-down events",
+        "Using Tailwind to speed up the UI design process",
+        "Creating visually engaging designs with animated content",
+      ],
+      "Next Steps": [
+        "Implement additional features such as a blog or news section to keep the content fresh and engaging.",
+        "Expand the website to include case studies and client testimonials to showcase successful projects.",
+        "Regularly update the design and content to keep up with the latest trends and user expectations.",
       ],
     },
   },

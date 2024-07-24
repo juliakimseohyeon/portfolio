@@ -27,15 +27,19 @@ export default function ProjectDetail({ selectedProject, setSelectedProject }) {
               {selectedProject.project_name}
             </h1>
             <div className="project-hero__link-group">
-              <Link to={selectedProject.url} className="project-hero__link">
-                <IconUrl />
-              </Link>
-              <Link
-                to={selectedProject.github_frontend}
-                className="project-hero__link"
-              >
-                <IconGithub />
-              </Link>
+              {selectedProject.url && (
+                <Link to={selectedProject.url} className="project-hero__link">
+                  <IconUrl />
+                </Link>
+              )}
+              {selectedProject.github_frontend && (
+                <Link
+                  to={selectedProject.github_frontend}
+                  className="project-hero__link"
+                >
+                  <IconGithub />
+                </Link>
+              )}
             </div>
           </div>
           <div className="project-hero__tag-group">

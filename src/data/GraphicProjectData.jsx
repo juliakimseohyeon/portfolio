@@ -22,14 +22,14 @@ import imgHc6 from "../assets/images/graphic-projects/graphics-hc-6.jpg";
 
 export const graphicProjects = [
   {
-    id: 1,
+    id: 0,
     project_name: "GetCrisp",
     images: [imgGetCrispArcus, imgGetCrispK5, imgGetCrispRhm],
     tags: ["Social Media Advertisement"],
   },
 
   {
-    id: 2,
+    id: 1,
     project_name: "Nest by Chard Development",
     images: [
       imgNest1,
@@ -49,13 +49,13 @@ export const graphicProjects = [
     ],
   },
   {
-    id: 3,
+    id: 2,
     project_name: "The Royals by Chard Development",
     images: [imgRoyals1, imgRoyals2, imgRoyals3, imgRoyals4],
     tags: ["Branding", "Print Advertisement"],
   },
   {
-    id: 4,
+    id: 3,
     project_name: "Vancouver Harbour Centre",
     images: [imgHc1, imgHc2, imgHc3, imgHc4, imgHc5, imgHc6],
     tags: [
