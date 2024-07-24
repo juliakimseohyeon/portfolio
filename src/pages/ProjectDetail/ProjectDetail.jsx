@@ -4,7 +4,7 @@ import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import IconGithub from "../../assets/icons/IconGithub";
 import IconUrl from "../../assets/icons/IconUrl";
-import { projects } from "../../data/Projects";
+import { projects } from "../../data/ProjectData";
 
 export default function ProjectDetail({ selectedProject, setSelectedProject }) {
   const { id } = useParams();

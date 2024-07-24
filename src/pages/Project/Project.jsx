@@ -4,7 +4,7 @@ import axios from "axios";
 import IconArrowDown from "../../assets/icons/IconArrowDown";
 import Carousel from "../../components/Carousel/Carousel";
 import Typewriter from "typewriter-effect";
-import { projects } from "../../data/Projects";
+import { projects } from "../../data/ProjectData";
 
 export default function Project({ setSelectedProject }) {
   return (
