@@ -59,7 +59,7 @@ export const projects = [
       "Who is Bubblefish UX Design":
         "Bubblefish UX Design is a Brighton-based UX consultancy. They have provided holistic UX design services to major UK companies such as 'Chambers and Partners', 'HMRC', 'Public Health Wales', and 'Tristar Worldwide'.",
       "Why was the new website necessary?":
-        "Because their focus is on creating designs that is accessible and easy to use for everyone, Bubblefish UX needed a website that would also embody those values. They also wanted to move away from their old website design to something that was more modern and polished.",
+        "Because their focus is on creating designs that are accessible and easy to use for everyone, Bubblefish UX needed a website that would also embody those values. They also wanted to move away from their old website design to something that was more modern and polished.",
       "Tech Stack": ["React", "Tailwind"],
       "Key Learnings": [
         "How to write code that is accessible, incorporating aria-labels, skip-to-main-content features, and key-down events",

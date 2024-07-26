@@ -24,6 +24,7 @@
   }
   &__title {
     margin: 0;
+    text-align: left;
   }
   &__link-group {
     @include display-flex(flex, row, space-between);
