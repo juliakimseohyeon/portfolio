@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 import Toggle from "../Toggle/Toggle";
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 import iconHamburger from "../../assets/icons/icon-hamburger.svg";
+import LogoJuliaBlack from "../../assets/logos/logo-julia-black.svg";
+import LogoJuliaWhite from "../../assets/logos/logo-julia-white.svg";
 
-export default function Header() {
+export default function Header({ toggle, theme, toggleTheme }) {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1280); // Tracks whether the window width is greater than 1280px
 
@@ -24,10 +26,14 @@ export default function Header() {
     <header>
       <nav>
         <Link to="/" className="nav--left">
-          <p className="nav__logo">Julia.Kim.SeoHyeon</p>
+          <img
+            src={theme === "theme-dark" ? LogoJuliaWhite : LogoJuliaBlack}
+            alt="Julia Logo"
+          />
+          <p className="nav__logo-text">Julia Kim</p>
         </Link>
         <div className="nav--right">
-          <Toggle />
+          <Toggle toggle={toggle} theme={theme} toggleTheme={toggleTheme} />
 
           {!isDesktop && !hamburgerOpen && (
             <div

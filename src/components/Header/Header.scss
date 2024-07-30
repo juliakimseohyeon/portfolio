@@ -21,9 +21,14 @@ nav {
 }
 
 .nav {
-  &__logo {
+  &--left {
+    @include display-flex(flex, row);
+  }
+  &__logo-text {
     font-weight: 700;
     transition: 0.2s;
+    text-align: left;
+    line-height: 1.25em;
   }
   &--right {
     @include display-flex(flex, row);

@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { keepTheme, setTheme } from "./utils/themes";
 import Header from "./components/Header/Header";
 import Project from "./pages/Project/Project";
 import ProjectDetail from "./pages/ProjectDetail/ProjectDetail";
@@ -9,10 +10,32 @@ import GraphicDesign from "./pages/GraphicDesign/GraphicDesign";
 
 function App() {
   const [selectedProject, setSelectedProject] = useState({});
+  const [toggle, setToggle] = useState("dark");
+  const theme = localStorage.getItem("theme");
+
+  const toggleTheme = () => {
+    if (theme === "theme-dark") {
+      setTheme("theme-light");
+      setToggle("light");
+    } else {
+      setTheme("theme-dark");
+      setToggle("dark");
+    }
+  };
+
+  // Function to ensure the local storage always loads the correct theme
+  useEffect(() => {
+    keepTheme();
+    if (theme === "theme-dark") {
+      setToggle("dark");
+    } else {
+      setToggle("light");
+    }
+  }, []);
 
   return (
     <BrowserRouter>
-      <Header />
+      <Header toggle={toggle} theme={theme} toggleTheme={toggleTheme} />
       <Routes>
         <Route path="/" element={<Navigate to="/projects" />} />
         <Route
