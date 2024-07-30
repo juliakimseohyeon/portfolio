@@ -188,7 +188,7 @@ html.theme-dark .hero__icon {
   &__item-tags {
     @include display-flex(flex, row, flex-start, flex-start);
     flex-wrap: wrap;
-    gap: 0 1em;
+    gap: 0.5em;
     padding-bottom: 1.5em;
   }
   &__item-description {
@@ -196,7 +196,6 @@ html.theme-dark .hero__icon {
   }
   &__item-label {
     margin: 0;
-    font-weight: 300;
     line-height: 1.5;
   }
   &__item button {
