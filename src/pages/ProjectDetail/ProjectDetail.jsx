@@ -95,7 +95,7 @@ export default function ProjectDetail({ selectedProject, setSelectedProject }) {
                   <h2 className="project-description__subtitle">
                     {value.subtitle}
                   </h2>
-                  {parse(value.text)}
+                  {value.text && parse(value.text)}
                 </div>
               </div>
             ))}

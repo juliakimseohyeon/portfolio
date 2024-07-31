@@ -1,6 +1,7 @@
 import imgKong from "../assets/images/projects/kong-image.jpg";
 import imgKongWhat from "../assets/images/projects/kong-what.jpg";
 import imgKongWhy from "../assets/images/projects/kong-why.jpg";
+import imgKongHow from "../assets/images/projects/kong-how.png";
 import imgKongTech from "../assets/images/projects/kong-tech.jpg";
 import imgBubblefish from "../assets/images/projects/bubblefish-image.jpg";
 import imgBubblefishWho from "../assets/images/projects/bubblefish-who.jpg";
@@ -46,6 +47,22 @@ export const projects = [
         <li>OpenAI API</li>
         <li>StabilityAI API</li>
         </ul>`,
+      },
+      how: {
+        image: imgKongHow,
+        subtitle: "How does it work?",
+        text: `<ol>
+        <li>User takes or uploads photo of a plant
+</li>
+        <li>MyPlantnet API identifies the plant
+</li>
+        <li>OpenAI API generates the plant data
+</li>
+        <li>StabilityAI API creates the illustration
+</li>
+        <li>User can read, update, or delete plant data
+</li>
+        </ol>`,
       },
       key_learnings: {
         subtitle: "Key Learnings",
