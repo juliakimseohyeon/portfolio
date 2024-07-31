@@ -49,7 +49,7 @@ export const projects = [
   },
   {
     id: 1,
-    project_name: "Bubblefish UX Design",
+    project_name: "Bubblefish UX",
     image: imgBubblefish,
     intro_text:
       "'Dive in' to the art of user-centric design with Bubblefish UX! Their revamped website showcases their commitment to creating accessible, modern, and visually engaging user experiences.",
