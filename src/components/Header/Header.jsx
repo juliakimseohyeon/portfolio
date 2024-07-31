@@ -29,6 +29,7 @@ export default function Header({ toggle, theme, toggleTheme }) {
           <img
             src={theme === "theme-dark" ? LogoJuliaWhite : LogoJuliaBlack}
             alt="Julia Logo"
+            className="nav__logo-image"
           />
           <p className="nav__logo-text">Julia Kim</p>
         </Link>

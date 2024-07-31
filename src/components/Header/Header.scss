@@ -24,6 +24,9 @@ nav {
   &--left {
     @include display-flex(flex, row);
   }
+  &__logo-image {
+    max-width: 4em;
+  }
   &__logo-text {
     font-weight: 700;
     transition: 0.2s;
