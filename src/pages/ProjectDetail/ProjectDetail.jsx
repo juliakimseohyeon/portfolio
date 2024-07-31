@@ -6,6 +6,7 @@ import IconGithub from "../../assets/icons/IconGithub";
 import IconUrl from "../../assets/icons/IconUrl";
 import { projects } from "../../data/ProjectData";
 import { openInNewTab } from "../../utils/openNewTab";
+import parse from "html-react-parser";
 
 export default function ProjectDetail({ selectedProject, setSelectedProject }) {
   const { id } = useParams();
@@ -59,7 +60,7 @@ export default function ProjectDetail({ selectedProject, setSelectedProject }) {
           {selectedProject.description &&
             Object.entries(selectedProject.description).map(([key, value]) => (
               <div key={key} className="project-description">
-                {Array.isArray(value) ? (
+                {/* {Array.isArray(value) ? (
                   <div className="project-description__text-group">
                     <h2 className="project-description__subtitle">{key}</h2>
                     <ul>
@@ -83,7 +84,19 @@ export default function ProjectDetail({ selectedProject, setSelectedProject }) {
                       <p>{value.text}</p>
                     </div>
                   </>
+                )} */}
+                {value.image && (
+                  <img
+                    src={value.image}
+                    className="project-description__image"
+                  />
                 )}
+                <div className="project-description__text-group">
+                  <h2 className="project-description__subtitle">
+                    {value.subtitle}
+                  </h2>
+                  {parse(value.text)}
+                </div>
               </div>
             ))}
         </div>
