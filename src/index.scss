@@ -84,9 +84,25 @@ html.theme-dark button {
 
 .label {
   font-size: 0.75em;
-  background-color: rgba($color-primary-white, 0.5);
+  color: $color-primary-white;
+  // background-color: rgba($color-primary-purple, 0.5);
+  background: $color-primary-teal;
+  background: linear-gradient(
+    135deg,
+    rgba($color-primary-teal, 0.5) 0%,
+    rgba($color-primary-purple, 0.5) 65%
+  );
   padding: 0.5em;
   border-radius: 1.5em;
+}
+
+html.theme-dark .label {
+  background: $color-primary-purple;
+  background: linear-gradient(
+    135deg,
+    rgba($color-primary-purple, 0.5) 0%,
+    rgba($color-primary-teal, 0.5) 65%
+  );
 }
 
 .theme-light {
