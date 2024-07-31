@@ -2,6 +2,8 @@ import imgKong from "../assets/images/projects/kong-image.jpg";
 import imgKongWhat from "../assets/images/projects/kong-what.jpg";
 import imgKongWhy from "../assets/images/projects/kong-why.jpg";
 import imgBubblefish from "../assets/images/projects/bubblefish-image.jpg";
+import imgBubblefishWho from "../assets/images/projects/bubblefish-who.jpg";
+import imgBubblefishWhy from "../assets/images/projects/bubblefish-why.jpg";
 
 export const projects = [
   {
@@ -64,10 +66,16 @@ export const projects = [
     url: "https://www.bubblefishux.design/",
     tags: ["Front End", "Tailwind", "Accessibility", "UI Design", "Animation"],
     description: {
-      "Who is Bubblefish UX Design":
-        "Bubblefish UX Design is a Brighton-based UX consultancy. They have provided holistic UX design services to major UK companies such as 'Chambers and Partners', 'HMRC', 'Public Health Wales', and 'Tristar Worldwide'.",
-      "Why was the new website necessary?":
-        "Because their focus is on creating designs that are accessible and easy to use for everyone, Bubblefish UX needed a website that would also embody those values. They also wanted to move away from their old website design to something that was more modern and polished.",
+      who: {
+        image: imgBubblefishWho,
+        subtitle: "Who is Bubblefish UX Design",
+        text: "Bubblefish UX Design is a Brighton-based UX consultancy. They have provided holistic UX design services to major UK companies such as 'Chambers and Partners', 'HMRC', 'Public Health Wales', and 'Tristar Worldwide'.",
+      },
+      why: {
+        image: imgBubblefishWhy,
+        subtitle: "Why was the new website necessary?",
+        text: "Because their focus is on creating designs that are accessible and easy to use for everyone, Bubblefish UX needed a website that would also embody those values. They also wanted to move away from their old website design to something that was more modern and polished.",
+      },
       "Tech Stack": ["React", "Tailwind"],
       "Key Learnings": [
         "How to write code that is accessible, incorporating aria-labels, skip-to-main-content features, and key-down events",
