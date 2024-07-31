@@ -35,10 +35,9 @@
     }
   }
   &__tag-group {
-    @include tablet {
-      @include display-flex(flex, row);
-      gap: 1em;
-    }
+    @include display-flex(flex, row);
+    flex-wrap: wrap;
+    gap: 0.5em;
   }
   &__image-group {
     @include display-flex(flex, column);
