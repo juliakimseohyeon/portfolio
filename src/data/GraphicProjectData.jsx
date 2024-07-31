@@ -25,7 +25,7 @@ export const graphicProjects = [
     id: 0,
     project_name: "GetCrisp",
     images: [imgGetCrispArcus, imgGetCrispK5, imgGetCrispRhm],
-    tags: ["Social Media Advertisement"],
+    tags: ["Social Media Ads"],
   },
 
   {
@@ -41,27 +41,18 @@ export const graphicProjects = [
       imgNest7,
       imgNest8,
     ],
-    tags: [
-      "Environmental Graphics",
-      "Custom Illustrations",
-      "Branding",
-      "Print Advertisement",
-    ],
+    tags: ["Environmental Graphics", "Illustrations", "Branding", "Print Ads"],
   },
   {
     id: 2,
     project_name: "The Royals by Chard Development",
     images: [imgRoyals1, imgRoyals2, imgRoyals3, imgRoyals4],
-    tags: ["Branding", "Print Advertisement"],
+    tags: ["Branding", "Print Ads"],
   },
   {
     id: 3,
     project_name: "Vancouver Harbour Centre",
     images: [imgHc1, imgHc2, imgHc3, imgHc4, imgHc5, imgHc6],
-    tags: [
-      "Environmental Graphics",
-      "Custom Illustrations",
-      "Social Media Advertisement",
-    ],
+    tags: ["Environmental Graphics", "Illustrations", "Social Media Ads"],
   },
 ];
