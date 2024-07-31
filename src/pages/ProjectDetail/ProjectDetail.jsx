@@ -59,15 +59,25 @@ export default function ProjectDetail({ selectedProject, setSelectedProject }) {
           {selectedProject.description &&
             Object.entries(selectedProject.description).map(([key, value]) => (
               <div key={key} className="project-description">
-                <h2>{key}</h2>
                 {Array.isArray(value) ? (
-                  <ul>
-                    {value.map((item, idx) => (
-                      <li key={idx}>{item}</li>
-                    ))}
-                  </ul>
+                  <>
+                    <h2>{key}</h2>
+                    <ul>
+                      {value.map((item, idx) => (
+                        <li key={idx}>{item}</li>
+                      ))}
+                    </ul>
+                  </>
                 ) : (
-                  <p>{value}</p>
+                  <>
+                    {value.image && (
+                      <img
+                        src={value.image}
+                        className="project-description-image"
+                      />
+                    )}
+                    <h2>{value.subtitle}</h2> <p>{value.text}</p>
+                  </>
                 )}
               </div>
             ))}

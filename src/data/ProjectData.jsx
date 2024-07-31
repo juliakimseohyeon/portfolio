@@ -1,4 +1,6 @@
 import imgKong from "../assets/images/projects/kong-image.jpg";
+import imgKongWhat from "../assets/images/projects/kong-what.jpg";
+import imgKongWhy from "../assets/images/projects/kong-why.jpg";
 import imgBubblefish from "../assets/images/projects/bubblefish-image.jpg";
 
 export const projects = [
@@ -20,10 +22,16 @@ export const projects = [
       "Prompt Engineering",
     ],
     description: {
-      "What is Kong?":
-        "Kong helps foster the love for nature by gamifying plant identification. When user uploads or takes a photo of a plant, MyPlantnet identifies it, OpenAI API provides information about the plant, and StabilityAI API generates a Pokémon-like illustration. The identified plant's illustration and information are then added to the user's collection.",
-      "Why is Kong necessary?":
-        "According to the World Economic Forum, almost 8 out of 10 children do not recognize common plants like an oak leaf or a bluebell. In a world where climate crisis is worse than ever, it is essential that we don't forget about the very basics: fostering a culture where we love and appreciate nature and have empathy towards the environment.",
+      what: {
+        image: imgKongWhat,
+        subtitle: "What Is Kong?",
+        text: "Kong helps foster the love for nature by gamifying plant identification. When user uploads or takes a photo of a plant, MyPlantnet identifies it, OpenAI API provides information about the plant, and StabilityAI API generates a Pokémon-like illustration. The identified plant's illustration and information are then added to the user's collection.",
+      },
+      why: {
+        image: imgKongWhy,
+        subtitle: "Why is Kong necessary?",
+        text: "According to the World Economic Forum, almost 8 out of 10 children do not recognize common plants like an oak leaf or a bluebell. In a world where climate crisis is worse than ever, it is essential that we don't forget about the very basics: fostering a culture where we love and appreciate nature and have empathy towards the environment.",
+      },
       "Tech Stack": [
         "React",
         "Express",
