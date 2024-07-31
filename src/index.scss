@@ -40,12 +40,19 @@ a:hover {
   color: $color-primary-teal;
 }
 
-ul {
+ul,
+ol {
   margin: 0;
-  padding-left: 0.75em;
   font-weight: 200;
 }
 
+ul {
+  padding-left: 0.75em;
+}
+
+ol {
+  padding-left: 1em;
+}
 p {
   margin: 0;
   line-height: 1.75em;
