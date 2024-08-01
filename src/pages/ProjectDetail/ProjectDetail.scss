@@ -55,10 +55,10 @@
     max-width: 100%;
     text-align: left;
     @include display-flex(flex, column);
-    gap: 2em;
+    gap: 4em;
     padding-bottom: 5em;
     @include tablet {
-      gap: 4em;
+      gap: 8em;
       :nth-of-type(even) {
         flex-direction: row-reverse;
       }
