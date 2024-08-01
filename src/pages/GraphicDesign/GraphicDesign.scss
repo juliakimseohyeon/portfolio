@@ -3,7 +3,7 @@
 
 .graphic {
   &__container {
-    padding: 0 2em;
+    padding: 0 1em;
     padding-bottom: 5em;
     max-width: 100%;
     @include display-flex(flex, column);

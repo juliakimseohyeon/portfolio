@@ -151,13 +151,9 @@
     text-align: left;
   }
   &__group {
-    padding: 2em;
-    padding-top: 0;
+    padding: 0 1em 5em 1em;
     @include display-flex(flex, column);
     gap: 3em;
-    @include tablet {
-      padding-bottom: 5em;
-    }
     @include desktop {
       margin: auto;
       gap: 4em;

@@ -2,7 +2,7 @@
 @use "../../styles/partials/variables" as *;
 
 .project-detail {
-  padding: 0 2em;
+  padding: 0 1em;
   max-width: 100%;
   @include display-flex(flex, column, normal, flex-start);
   gap: 2em;

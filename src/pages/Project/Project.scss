@@ -2,7 +2,7 @@
 @use "../../styles/partials/variables" as *;
 
 .project-container {
-  padding: 0 2em;
+  padding: 0 1em;
   max-width: 100%;
   @include display-flex(flex, column);
   gap: 5em;
@@ -36,7 +36,7 @@
   }
 
   &__image {
-    width: 100%;
+    max-width: 100%;
     position: relative;
     padding: 1em;
     @include display-flex(flex, column);
