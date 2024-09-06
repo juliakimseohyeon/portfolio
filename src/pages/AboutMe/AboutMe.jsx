@@ -1,6 +1,10 @@
 import "./AboutMe.scss";
 import { openInNewTab } from "../../utils/openNewTab";
-import imgHc from "../../assets/images/about-me-hc.jpg";
+// import imgHc from "../../assets/images/about-me-hc.jpg";
+import imgHat1 from "../../assets/images/about-me-hat-1.jpg";
+import imgHat2 from "../../assets/images/about-me-hat-2.jpg";
+import imgHat3 from "../../assets/images/about-me-hat-3.jpg";
+import imgHat4 from "../../assets/images/about-me-hat-4.jpg";
 import imgDiving from "../../assets/images/about-me-diving.jpg";
 import imgCoffee from "../../assets/images/about-me-coffee.jpg";
 import IconLinkedin from "../../assets/icons/IconLinkedin";
@@ -28,11 +32,28 @@ export default function AboutMe() {
             research.
           </p>
           <div className="about-text__chunk">
-            <img
-              className="about-image"
-              src={imgHc}
-              alt="Julia infront of Harbour Centre environmental graphic"
-            />
+            <div className="about-image-group">
+              <img
+                className="about-image--small"
+                src={imgHat1}
+                alt="Julia with a cap infront of Machu Picchu"
+              />
+              <img
+                className="about-image--small"
+                src={imgHat2}
+                alt="Julia with a colourful hat on the beach"
+              />
+              <img
+                className="about-image--small"
+                src={imgHat3}
+                alt="Julia with a toque infront of a lake"
+              />
+              <img
+                className="about-image--small"
+                src={imgHat4}
+                alt="Julia with a cap at the beach"
+              />
+            </div>
             <h2 className="about-text__title">I'm used to wearing many hats</h2>
             <p className="about-text__text">
               I transform from a designer that creates 8-foot-tall vinyl window
